@@ -12,8 +12,14 @@ engines:
     config:
       languages:
         - javascript
-
+ratings:
+  paths:
+    - "client/assets/native/**"
+    - "client/assets/views/**"
+    - "client/test/selenium/**"
+    - "server/**"
 exclude_paths:
-  - "client/**/*"
-  - "!client/assets/native/**/*"
-  - "!client/test/selenium/**/*"
+  - "client/**"
+  - "!client/assets/native/**"
+  - "!client/assets/views/**"
+  - "!client/test/selenium/**"
