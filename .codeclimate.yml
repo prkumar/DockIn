@@ -1,0 +1,4 @@
+exclude_paths:
+  - "client/**/*"
+  - "!client/assets/native/**/*"
+  - "!client/test/selenium/**/*"
