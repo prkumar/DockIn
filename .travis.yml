@@ -3,7 +3,7 @@ language: node_js
 node_js:
   # EmissaryWST's "Getting Started" wiki details this version:
   # https://github.com/lelandtran/EmissaryWST/wiki/01)--Getting-Started
-  - "5.8.0"
+  - 5.8.0
 
 os:
   - linux
@@ -21,3 +21,10 @@ install:
 script:
   - gulp test:server
   # TODO: Run selenium tests (under client/test/selenium)
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: Bc2OhsMWTeI5OBm1knC3wPQeB8N9UraNWrxJh09v+KbXx1eAKSMrWIB8RWW/EUCDU7+hQ937cLdt6HUv1R+0AygN1qvSgCsw7vRPstTidaKCp3pfuI6NWAM8wCWT1odwpqC2isLgqy36325yTZ9UC/EiROwXbSpd/EhfN+onQVG0U4iDAx6hE1lSBN83xcT8z4DaZkE26kQh4zxodU3ikytGK7oZZ9qJoZMJIfbHBmlHb7iLCFQsp7bxC3fTWXR8VYHw8UNVOkAZlggD6CwjbreUqjjnpZgpJ3o+L8iBq0AozH4x0OEXLebG8RyCn7ocZoKqVbI98yvCbm1R2OcBrwtSigdKoksyINvKlQTLFpIm60E4lpPCpt72AhPQs1PNfw46yUqS7UQgh0ltbvsoOV6VaSnwpliIstOQaJA6TpE2p18US9WzjHIsY83gEcSjt9w0vXXxJHp3IDUGobNH/CUg3bBMHoyel+TcwzgKGJRbGXtCtzOIe/Bmw9Lgd7SLDR/UZPYJv0jApwWIEVBf20QQA8ULT9fO9TOmGcHP01o8z1k2Qr8JBWtNYlYLGSXi2jpZkozqb4+WhVUwdAos4mOGV+zMO9S2jrL1+uDs85oVKH39MWG4RuFcpuK+V+HKMFFqvQNLI/vkFT+pvT9ZFVbfN0pCC0HvH6JEZghDqK0=
+  app:
+    master: emissary-2
