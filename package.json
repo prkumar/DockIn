@@ -12,7 +12,8 @@
     "start": "node server/app.js",
     "test": "gulp test:server && gulp test:client",
     "codeclimate": "gulp test:server && gulp codeclimate",
-    "apidoc": "gulp test:server && gulp apidoc"
+    "apidoc": "gulp test:server && gulp apidoc",
+    "lint": "codeclimate analyze -f html > lint-results.html"
   },
   "dependencies": {
     "async": "0.9.0",
