@@ -1,5 +1,5 @@
 # Emissary 2.0
-[![Build Status](https://travis-ci.com/prkumar/Emissary.svg?token=nMZqBSpBhyZh9iNzRBhA&branch=master)](https://travis-ci.com/prkumar/Emissary) [![Code Climate](https://codeclimate.com/repos/59195600f81f3102a90003f9/badges/0f8f5e69a8e234418fde/gpa.svg)](https://codeclimate.com/repos/59195600f81f3102a90003f9/feed) 
+[![Build Status](https://travis-ci.com/prkumar/Emissary.svg?token=nMZqBSpBhyZh9iNzRBhA&branch=master)](https://travis-ci.com/prkumar/Emissary) [![Code Climate](https://codeclimate.com/repos/59195600f81f3102a90003f9/badges/0f8f5e69a8e234418fde/gpa.svg)](https://codeclimate.com/repos/59195600f81f3102a90003f9/feed) [![Test Coverage](https://codeclimate.com/repos/59195600f81f3102a90003f9/badges/0f8f5e69a8e234418fde/coverage.svg)](https://codeclimate.com/repos/59195600f81f3102a90003f9/coverage)
 
 ## 0. Currently deployed on: 
 http://emissary-2.herokuapp.com
