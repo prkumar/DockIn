@@ -11,6 +11,7 @@
     "postinstall": "bower install && gulp build:prod",
     "start": "node server/app.js",
     "test": "gulp test:server && gulp test:client"
+    "codeclimate": "gulp codeclimate"
   },
   "dependencies": {
     "async": "0.9.0",
@@ -61,16 +62,18 @@
   },
   "devDependencies": {
     "chai": "1.10.0",
+    "gulp-angular-htmlify": "2.3.0",
+    "gulp-codeclimate-reporter": "^1.2.0",
+    "gulp-istanbul": "^1.1.1",
     "gulp-util": "3.0.4",
     "karma-mocha": "0.1.10",
     "karma-phantomjs-launcher": "0.1.4",
     "karma-sinon-chai": "^0.3.0",
     "karma-spec-reporter": "0.0.16",
     "mocha": "2.1.0",
-    "supertest": "0.15.0",
-    "gulp-angular-htmlify": "2.3.0",
     "nodemon": "1.3.7",
-    "socket.io-client": "1.4.5"
+    "socket.io-client": "1.4.5",
+    "supertest": "0.15.0"
   },
   "engines": {
     "node": "0.10.x"
