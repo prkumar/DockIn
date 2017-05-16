@@ -3,7 +3,7 @@ language: node_js
 node_js:
   # EmissaryWST's "Getting Started" wiki details this version:
   # https://github.com/lelandtran/EmissaryWST/wiki/01)--Getting-Started
-  - 6
+  - 5.8.0
 
 os:
   - linux
@@ -11,7 +11,7 @@ os:
 services: mongodb
 
 install:
-  # - nvm install 0.10
+  - nvm install 0.10
   - npm install -g gulp bower foreman
   - npm install
   # TODO: Add end-to-end testing
