@@ -10,7 +10,8 @@
   "scripts": {
     "postinstall": "bower install && gulp build:prod",
     "start": "node server/app.js",
-    "test": "gulp test:server && gulp test:client",
+    "prod": "gulp build:prod && npm start",
+    "test": "gulp test:server",
     "codeclimate": "gulp test:server && gulp codeclimate",
     "apidoc": "gulp test:server && gulp apidoc",
     "lint": "codeclimate analyze -f html > lint-results.html"
