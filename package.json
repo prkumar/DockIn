@@ -76,6 +76,7 @@
     "mocha": "2.1.0",
     "nightwatch": "^0.9.15",
     "nodemon": "1.3.7",
+    "selenium": "^2.20.0",
     "socket.io-client": "1.4.5",
     "supertest": "0.15.0"
   },

@@ -20,6 +20,7 @@ install:
 
 script:
   - gulp test:server
+  - gulp test:e2e
   # TODO: Run selenium tests (under client/test/selenium)
 
 after_success:
