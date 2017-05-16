@@ -18,5 +18,5 @@ gulp.task('test:server', ['test:server:pre-test'], function(){
     .pipe(istanbul.writeReports())
     // Enforce a coverage of at least 90%
     //.pipe(istanbul.enforceThresholds({ thresholds: { global: 85 } }))
-    //.pipe(exit());
+    .pipe(exit());
 });

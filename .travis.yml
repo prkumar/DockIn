@@ -23,7 +23,7 @@ script:
   # TODO: Run selenium tests (under client/test/selenium)
 
 after_success:
-  - gulp codeclimate
+  - npm run codeclimate
 
 notifications:
   email: false
