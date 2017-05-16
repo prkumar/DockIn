@@ -22,6 +22,9 @@ script:
   - gulp test:server
   # TODO: Run selenium tests (under client/test/selenium)
 
+after_success:
+  - gulp codeclimate
+
 notifications:
   email: false
   slack: anchorbuddies:wJP4trDavBHb1tt561L5oYmU
