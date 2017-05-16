@@ -1,5 +1,5 @@
-# WebstormTroopers
-[ ![Codeship Status for thiefjack/WebStormTroopers](https://codeship.com/projects/e58e08b0-ce3e-0133-961f-32b8bfabf829/status?branch=master)](https://codeship.com/projects/140852) 
+# Emissary 2.0
+[![Build Status](https://travis-ci.com/prkumar/Emissary.svg?token=nMZqBSpBhyZh9iNzRBhA&branch=master)](https://travis-ci.com/prkumar/Emissary) [![Code Climate](https://codeclimate.com/repos/59195600f81f3102a90003f9/badges/0f8f5e69a8e234418fde/gpa.svg)](https://codeclimate.com/repos/59195600f81f3102a90003f9/feed) 
 
 ## 0. Currently deployed on: 
 http://webstormtroopers.herokuapp.com
