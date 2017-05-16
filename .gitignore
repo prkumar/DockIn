@@ -17,3 +17,4 @@ mobile/www/*
 !mobile/README
 *.swp
 *.iml
+codeclimate-*
