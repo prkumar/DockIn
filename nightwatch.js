@@ -1,4 +1,3 @@
-var TRAVIS_JOB_NUMBER = process.env.TRAVIS_JOB_NUMBER;
 module.exports = {
   "src_folders" : ["server/test/e2e.js"],
   "output_folder" : "reports",
@@ -48,8 +47,8 @@ module.exports = {
         }
       },
       "desiredCapabilities": {
-        "build": "build-${TRAVIS_JOB_NUMBER}",
-        "tunnel-identifier": TRAVIS_JOB_NUMBER
+        "build": "build-1234",
+        "tunnel-identifier": 1234
       },
     }
   }

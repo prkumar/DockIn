@@ -14,7 +14,7 @@ install:
   - nvm install 0.10
   - npm install -g gulp bower foreman
   #- npm install -g nightwatch
-  #- npm install
+  - npm install
   # TODO: Add end-to-end testing
   # - npm install -g se-interpreter
   #- npm install sauce-connect
