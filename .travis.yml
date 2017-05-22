@@ -13,23 +13,23 @@ services: mongodb
 install:
   - nvm install 0.10
   - npm install -g gulp bower foreman
-  #- npm install -g nightwatch
-  - npm install
+  - npm install 
+  - npm install -g nightwatch
   # TODO: Add end-to-end testing
   # - npm install -g se-interpreter
-  #- npm install sauce-connect
+  - npm install sauce-connect
 
 before_script:
   # start server
-  #- npm run serve:dist &
+  - npm run serve:dist &
 
 script:
   - gulp test:server
   
   # TODO: Run selenium tests (under client/test/selenium)
-  #- nightwatch --config nightwatch.js --env chrome,ie11
+  - nightwatch --config nightwatch.js --env chrome,ie11
   # kill the server
-  #- pkill node
+  - pkill node
 
 after_success:
   - npm run codeclimate
@@ -49,10 +49,10 @@ deploy:
 addons:
   code_climate:
     repo_token: 0ad5a8a20f54533cde0460e45b51d417da57b12d6ba4e8b0f4bc9ea68da087cd
-  #sauce_connect:
-   # username: "dlt009"
-   # jwt:
-    #  secure: "The secure string output by `travis encrypt SAUCE_ACCESS_KEY=8c771046-eae9-453a-8ab5-c1bc9beeac8a`"
+  sauce_connect:
+    username: "dlt009"
+    jwt:
+      secure: "The secure string output by `travis encrypt SAUCE_ACCESS_KEY=8c771046-eae9-453a-8ab5-c1bc9beeac8a`"
 
 
   
