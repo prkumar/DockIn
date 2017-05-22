@@ -12,13 +12,13 @@ gulp.task('test:server:pre-test', function () {
     .pipe(istanbul.hookRequire());
 });
 
-gulp.task('test:e2e', function() {
+/*gulp.task('test:e2e', function() {
   return gulp
     .src('server/test/e2e.js')
     .pipe(nightwatch({
       configFile: 'nightwatch.json'
     }));
-});
+});*/
 
 /* This will run our mocha tests */
 gulp.task('test:server', ['test:server:pre-test'], function(){

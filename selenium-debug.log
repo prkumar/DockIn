@@ -1,138 +1,15 @@
-23:01:06.647 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
-23:01:06.648 INFO - Launching a standalone Selenium Server
-2017-05-21 23:01:06.682:INFO::main: Logging initialized @500ms to org.seleniumhq.jetty9.util.log.StdErrLog
-23:01:06.756 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-23:01:06.756 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+15:11:33.164 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+15:11:33.165 INFO - Launching a standalone Selenium Server
+2017-05-22 15:11:33.174:INFO::main: Logging initialized @245ms to org.seleniumhq.jetty9.util.log.StdErrLog
+15:11:33.221 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+15:11:33.221 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
 Unable to create new instances on this machine.
-23:01:06.756 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-23:01:06.757 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-23:01:06.758 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+15:11:33.221 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+15:11:33.221 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+15:11:33.221 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
  registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform WIN10
-2017-05-21 23:01:06.820:INFO:osjs.Server:main: jetty-9.4.3.v20170317
-2017-05-21 23:01:06.880:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@14acaea5{/,null,AVAILABLE}
-2017-05-21 23:01:06.931:INFO:osjs.AbstractConnector:main: Started ServerConnector@4c387211{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
-2017-05-21 23:01:06.932:INFO:osjs.Server:main: Started @750ms
-23:01:06.932 INFO - Selenium Server is up and running
-23:01:07.543 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
-23:01:07.579 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=E2e, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
-23:01:07.780 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=E2e, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 26869
-Only local connections are allowed.
-23:01:12.210 INFO - Detected dialect: OSS
-23:01:12.228 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=E2e, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
-23:01:12.250 INFO - Executing: [get: http://webstormtroopers.herokuapp.com/login])
-23:01:34.716 INFO - Done: [get: http://webstormtroopers.herokuapp.com/login]
-23:01:34.750 INFO - Executing: [find elements: By.cssSelector: body])
-23:01:34.843 INFO - Done: [find elements: By.cssSelector: body]
-23:01:34.861 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: body]])
-23:01:34.897 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: body]]
-23:01:34.908 INFO - Executing: [find element: By.cssSelector: input[name=username]])
-23:01:34.944 INFO - Done: [find element: By.cssSelector: input[name=username]]
-23:01:34.953 INFO - Executing: [send keys: 1 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: input[name=username]], [c, s, e, 1, 1, 2, p, r, o, j, e, c, t, @, a, n, c, h, o, r, b, u, d, d, i, e, s, ., c, o, m]])
-23:01:35.318 INFO - Done: [send keys: 1 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: input[name=username]], [c, s, e, 1, 1, 2, p, r, o, j, e, c, t, @, a, n, c, h, o, r, b, u, d, d, i, e, s, ., c, o, m]]
-23:01:35.325 INFO - Executing: [find element: By.cssSelector: input[name=password]])
-23:01:35.360 INFO - Done: [find element: By.cssSelector: input[name=password]]
-23:01:35.366 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: input[name=password]], [c, s, e, 1, 1, 2]])
-23:01:35.512 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: input[name=password]], [c, s, e, 1, 1, 2]]
-23:01:36.519 INFO - Executing: [find element: By.cssSelector: button[type=submit]])
-23:01:36.538 INFO - Done: [find element: By.cssSelector: button[type=submit]]
-23:01:36.546 INFO - Executing: [click: 3 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: button[type=submit]]])
-23:01:36.619 INFO - Done: [click: 3 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: button[type=submit]]]
-23:01:37.629 INFO - Executing: [find elements: By.cssSelector: body])
-23:01:38.329 INFO - Done: [find elements: By.cssSelector: body]
-23:01:38.343 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: body]])
-23:01:38.408 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: body]]
-23:01:39.415 INFO - Executing: [find element: By.xpath: //div[contains(@class, 'dropdown')]])
-23:01:39.438 INFO - Done: [find element: By.xpath: //div[contains(@class, 'dropdown')]]
-23:01:39.442 INFO - Executing: [click: 5 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> xpath: //div[contains(@class, 'dropdown')]]])
-23:01:39.552 INFO - Done: [click: 5 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> xpath: //div[contains(@class, 'dropdown')]]]
-23:01:40.557 INFO - Executing: [find element: By.xpath: //a[text()='Check-In']])
-23:01:40.579 INFO - Done: [find element: By.xpath: //a[text()='Check-In']]
-23:01:40.582 INFO - Executing: [click: 6 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> xpath: //a[text()='Check-In']]])
-23:01:41.020 INFO - Done: [click: 6 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> xpath: //a[text()='Check-In']]]
-23:01:42.030 INFO - Executing: [find element: By.xpath: //div[contains(@id, 'tap-to-check')]])
-23:01:42.054 INFO - Done: [find element: By.xpath: //div[contains(@id, 'tap-to-check')]]
-23:01:42.059 INFO - Executing: [click: 7 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> xpath: //div[contains(@id, 'tap-to-check')]]])
-23:01:42.121 INFO - Done: [click: 7 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> xpath: //div[contains(@id, 'tap-to-check')]]]
-23:01:42.128 INFO - Executing: [find element: By.cssSelector: input[name=first]])
-23:01:42.165 INFO - Done: [find element: By.cssSelector: input[name=first]]
-23:01:42.172 INFO - Executing: [send keys: 8 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: input[name=first]], [A, n, c, h, o, r]])
-23:01:42.555 INFO - Done: [send keys: 8 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: input[name=first]], [A, n, c, h, o, r]]
-23:01:42.572 INFO - Executing: [find element: By.cssSelector: input[name=last]])
-23:01:42.626 INFO - Done: [find element: By.cssSelector: input[name=last]]
-23:01:42.640 INFO - Executing: [send keys: 9 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: input[name=last]], [B, u, d, d, i, e, s]])
-23:01:42.870 INFO - Done: [send keys: 9 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: input[name=last]], [B, u, d, d, i, e, s]]
-23:01:42.880 INFO - Executing: [find element: By.cssSelector: input[name=phoneNumber]])
-23:01:42.908 INFO - Done: [find element: By.cssSelector: input[name=phoneNumber]]
-23:01:42.915 INFO - Executing: [send keys: 10 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: input[name=phoneNumber]], [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]])
-23:01:43.003 INFO - Done: [send keys: 10 [[ChromeDriver: chrome on XP (a109d72698b8cd3772cbaaa33d0d2d56)] -> css selector: input[name=phoneNumber]], [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]]
-23:01:43.008 INFO - Executing: [send keys to active: [?]])
-23:01:43.329 INFO - Done: [send keys to active: [?]]
-23:01:44.338 INFO - Executing: [delete session: 7e6b46b2-6ae0-40e2-a5e7-7ea2e5215cd2])
-23:01:45.887 INFO - Done: [delete session: 7e6b46b2-6ae0-40e2-a5e7-7ea2e5215cd2]
-23:01:45.911 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=E2e, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
-23:01:45.912 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=E2e, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 29312
-Only local connections are allowed.
-23:01:47.917 INFO - Detected dialect: OSS
-23:01:47.919 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=E2e, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
-23:01:47.926 INFO - Executing: [get: http://webstormtroopers.herokuapp.com/login])
-23:01:49.535 INFO - Done: [get: http://webstormtroopers.herokuapp.com/login]
-23:01:49.541 INFO - Executing: [find elements: By.cssSelector: body])
-23:01:49.578 INFO - Done: [find elements: By.cssSelector: body]
-23:01:49.588 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: body]])
-23:01:49.615 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: body]]
-23:01:49.631 INFO - Executing: [find element: By.cssSelector: input[name=username]])
-23:01:49.697 INFO - Done: [find element: By.cssSelector: input[name=username]]
-23:01:49.706 INFO - Executing: [send keys: 1 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[name=username]], [c, s, e, 1, 1, 2, p, r, o, j, e, c, t, @, a, n, c, h, o, r, b, u, d, d, i, e, s, ., c, o, m]])
-23:01:49.993 INFO - Done: [send keys: 1 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[name=username]], [c, s, e, 1, 1, 2, p, r, o, j, e, c, t, @, a, n, c, h, o, r, b, u, d, d, i, e, s, ., c, o, m]]
-23:01:50.001 INFO - Executing: [find element: By.cssSelector: input[name=password]])
-23:01:50.026 INFO - Done: [find element: By.cssSelector: input[name=password]]
-23:01:50.032 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[name=password]], [c, s, e, 1, 1, 2]])
-23:01:50.128 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[name=password]], [c, s, e, 1, 1, 2]]
-23:01:51.136 INFO - Executing: [find element: By.cssSelector: button[type=submit]])
-23:01:51.166 INFO - Done: [find element: By.cssSelector: button[type=submit]]
-23:01:51.170 INFO - Executing: [click: 3 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: button[type=submit]]])
-23:01:51.240 INFO - Done: [click: 3 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: button[type=submit]]]
-23:01:52.247 INFO - Executing: [find elements: By.cssSelector: body])
-23:01:52.699 INFO - Done: [find elements: By.cssSelector: body]
-23:01:52.706 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: body]])
-23:01:52.791 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: body]]
-23:01:53.797 INFO - Executing: [find element: By.xpath: //*[contains(text(), 'Appointments')]])
-23:01:53.833 INFO - Done: [find element: By.xpath: //*[contains(text(), 'Appointments')]]
-23:01:53.837 INFO - Executing: [click: 5 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> xpath: //*[contains(text(), 'Appointments')]]])
-23:01:54.775 INFO - Done: [click: 5 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> xpath: //*[contains(text(), 'Appointments')]]]
-23:01:54.785 INFO - Executing: [find element: By.xpath: //div[contains(@class, 'add-button')]])
-23:01:54.816 INFO - Done: [find element: By.xpath: //div[contains(@class, 'add-button')]]
-23:01:54.826 INFO - Executing: [click: 6 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> xpath: //div[contains(@class, 'add-button')]]])
-23:01:54.891 INFO - Done: [click: 6 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> xpath: //div[contains(@class, 'add-button')]]]
-23:01:55.899 INFO - Executing: [find element: By.cssSelector: input[id=appt-first]])
-23:01:55.918 INFO - Done: [find element: By.cssSelector: input[id=appt-first]]
-23:01:55.924 INFO - Executing: [send keys: 7 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-first]], [T, h, o, m, a, s]])
-23:01:56.101 INFO - Done: [send keys: 7 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-first]], [T, h, o, m, a, s]]
-23:01:56.108 INFO - Executing: [find element: By.cssSelector: input[id=appt-last]])
-23:01:56.144 INFO - Done: [find element: By.cssSelector: input[id=appt-last]]
-23:01:56.148 INFO - Executing: [send keys: 8 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-last]], [P, o, w, e, l, l]])
-23:01:56.278 INFO - Done: [send keys: 8 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-last]], [P, o, w, e, l, l]]
-23:01:56.289 INFO - Executing: [find element: By.cssSelector: input[id=appt-number]])
-23:01:56.318 INFO - Done: [find element: By.cssSelector: input[id=appt-number]]
-23:01:56.328 INFO - Executing: [send keys: 9 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-number]], [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]])
-23:01:56.480 INFO - Done: [send keys: 9 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-number]], [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]]
-23:01:56.486 INFO - Executing: [find element: By.cssSelector: input[id=appt-provider]])
-23:01:56.536 INFO - Done: [find element: By.cssSelector: input[id=appt-provider]]
-23:01:56.547 INFO - Executing: [send keys: 10 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-provider]], [C, S, E, 1, 1, 2, P, r, o, v, i, d, e, r]])
-23:01:56.807 INFO - Done: [send keys: 10 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-provider]], [C, S, E, 1, 1, 2, P, r, o, v, i, d, e, r]]
-23:01:56.813 INFO - Executing: [find element: By.cssSelector: input[id=appt-date]])
-23:01:56.843 INFO - Done: [find element: By.cssSelector: input[id=appt-date]]
-23:01:56.850 INFO - Executing: [send keys: 11 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-date]], [0, 5, /, 1, 6, /, 1, 7]])
-23:01:56.995 INFO - Done: [send keys: 11 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-date]], [0, 5, /, 1, 6, /, 1, 7]]
-23:01:57.000 INFO - Executing: [find element: By.cssSelector: input[id=appt-time]])
-23:01:57.049 INFO - Done: [find element: By.cssSelector: input[id=appt-time]]
-23:01:57.056 INFO - Executing: [send keys: 12 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-time]], [5, :, 0, 0]])
-23:01:57.168 INFO - Done: [send keys: 12 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> css selector: input[id=appt-time]], [5, :, 0, 0]]
-23:01:57.174 INFO - Executing: [find element: By.xpath: //*[contains(text(), 'Save')]])
-23:01:57.228 INFO - Done: [find element: By.xpath: //*[contains(text(), 'Save')]]
-23:01:57.237 INFO - Executing: [click: 13 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> xpath: //*[contains(text(), 'Save')]]])
-23:01:57.529 INFO - Done: [click: 13 [[ChromeDriver: chrome on XP (be8ed2aca4152322031c668f374378f7)] -> xpath: //*[contains(text(), 'Save')]]]
-23:01:58.534 INFO - Executing: [delete session: f4029e0e-283d-47c6-af95-7dd209743ff8])
-23:01:59.435 INFO - Done: [delete session: f4029e0e-283d-47c6-af95-7dd209743ff8]
+2017-05-22 15:11:33.253:INFO:osjs.Server:main: jetty-9.4.3.v20170317
+2017-05-22 15:11:33.291:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@14acaea5{/,null,AVAILABLE}
+2017-05-22 15:11:33.322:INFO:osjs.AbstractConnector:main: Started ServerConnector@464bee09{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-05-22 15:11:33.322:INFO:osjs.Server:main: Started @391ms
+15:11:33.322 INFO - Selenium Server is up and running
