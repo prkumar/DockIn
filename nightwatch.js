@@ -1,3 +1,4 @@
+var TRAVIS_JOB_NUMBER = process.env.TRAVIS_JOB_NUMBER;
 module.exports = {
   "src_folders" : ["server/test/e2e.js"],
   "output_folder" : "reports",
@@ -13,6 +14,7 @@ module.exports = {
   },
 
   "test_settings" : {
+    
     "default" : {
       "launch_url" : "http://ondemand.saucelabs.com:80",
       "selenium_port"  : 80,
