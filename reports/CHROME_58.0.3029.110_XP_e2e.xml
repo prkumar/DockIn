@@ -5,16 +5,16 @@
 
   <testsuite name="e2e"
     errors="0" failures="0" hostname="" id="" package="e2e" skipped="0"
-    tests="2" time="28.60" timestamp="Tue, 16 May 2017 22:22:38 GMT">
+    tests="2" time="52.20" timestamp="Mon, 22 May 2017 06:01:06 GMT">
   
-    <testcase name="End to End Testing: CheckIn" classname="e2e" time="14.97" assertions="2">
+    <testcase name="End to End Testing: CheckIn" classname="e2e" time="38.66" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="End to End Testing: Add Appointment" classname="e2e" time="13.62" assertions="2">
+    <testcase name="End to End Testing: Add Appointment" classname="e2e" time="13.53" assertions="2">
 
     
 

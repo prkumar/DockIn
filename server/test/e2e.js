@@ -4,7 +4,7 @@ module.exports = {
     //'End to End Testing: LoginIn' : function (browser) {
     beforeEach : function(browser) {
         browser
-            .url('http://webstormtroopers.herokuapp.com/login')
+            .url('http://emissary-2.herokuapp.com/login')
             .waitForElementVisible('body', 1000)
             .setValue('input[name=username]', 'cse112project@anchorbuddies.com')
             .setValue('input[name=password]', 'cse112')
