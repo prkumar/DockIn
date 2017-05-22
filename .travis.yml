@@ -24,7 +24,7 @@ before_script:
   - npm run serve:dist &
 
 script:
-  - gulp test:server
+  #- gulp test:server
   
   # TODO: Run selenium tests (under client/test/selenium)
   - nightwatch --config nightwatch.js --env chrome,ie11
