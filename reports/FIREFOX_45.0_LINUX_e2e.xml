@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="15"
+            failures="0"
+            tests="2">
+
+  <testsuite name="e2e"
+    errors="15" failures="0" hostname="" id="" package="e2e" skipped="0"
+    tests="2" time="39.43" timestamp="Thu, 25 May 2017 19:38:32 GMT">
+  
+    <testcase name="End to End Testing: CheckIn" classname="e2e" time="17.66" assertions="2">
+
+    
+
+    
+    </testcase>
+      <system-err>
+        ERROR: Unable to locate element: &quot;#dropdownId&quot; using: css selector
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:20:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;#check-in&quot; using: css selector
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:21:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//div[contains(@id, 'tap-to-check')]&quot; using: xpath
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:27:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[name=first]&quot; using: css selector
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:29:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[name=last]&quot; using: css selector
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:30:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[name=phoneNumber]&quot; using: css selector
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:31:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//*[contains(text(), 'Appointments')]&quot; using: xpath
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:41:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//div[contains(@class, 'add-button')]&quot; using: xpath
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:42:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-first]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:45:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-last]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:46:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-number]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:47:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-provider]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:48:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-date]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:49:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-time]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:50:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//*[contains(text(), 'Save')]&quot; using: xpath
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:52:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+      </system-err>
+  
+    <testcase name="End to End Testing: Add Appointment" classname="e2e" time="21.77" assertions="2">
+
+    
+
+    
+    </testcase>
+      <system-err>
+        ERROR: Unable to locate element: &quot;#dropdownId&quot; using: css selector
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:20:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;#check-in&quot; using: css selector
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:21:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//div[contains(@id, 'tap-to-check')]&quot; using: xpath
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:27:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[name=first]&quot; using: css selector
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:29:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[name=last]&quot; using: css selector
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:30:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[name=phoneNumber]&quot; using: css selector
+    at Object.End to End Testing: CheckIn (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:31:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//*[contains(text(), 'Appointments')]&quot; using: xpath
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:41:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//div[contains(@class, 'add-button')]&quot; using: xpath
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:42:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-first]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:45:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-last]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:46:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-number]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:47:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-provider]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:48:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-date]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:49:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;input[id=appt-time]&quot; using: css selector
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:50:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//*[contains(text(), 'Save')]&quot; using: xpath
+    at Object.End to End Testing: Add Appointment (C:\Users\dltan\Documents\CSE112_OG\Emissary\server\test\e2e.js:52:14)
+    at Module.call (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\dltan\Documents\CSE112_OG\Emissary\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

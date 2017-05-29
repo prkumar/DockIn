@@ -1,15 +1,15 @@
-15:11:33.164 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
-15:11:33.165 INFO - Launching a standalone Selenium Server
-2017-05-22 15:11:33.174:INFO::main: Logging initialized @245ms to org.seleniumhq.jetty9.util.log.StdErrLog
-15:11:33.221 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-15:11:33.221 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+13:18:39.970 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+13:18:39.970 INFO - Launching a standalone Selenium Server
+2017-05-25 13:18:39.986:INFO::main: Logging initialized @245ms to org.seleniumhq.jetty9.util.log.StdErrLog
+13:18:40.037 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+13:18:40.037 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
 Unable to create new instances on this machine.
-15:11:33.221 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-15:11:33.221 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-15:11:33.221 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+13:18:40.037 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+13:18:40.037 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+13:18:40.037 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
  registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform WIN10
-2017-05-22 15:11:33.253:INFO:osjs.Server:main: jetty-9.4.3.v20170317
-2017-05-22 15:11:33.291:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@14acaea5{/,null,AVAILABLE}
-2017-05-22 15:11:33.322:INFO:osjs.AbstractConnector:main: Started ServerConnector@464bee09{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
-2017-05-22 15:11:33.322:INFO:osjs.Server:main: Started @391ms
-15:11:33.322 INFO - Selenium Server is up and running
+2017-05-25 13:18:40.071:INFO:osjs.Server:main: jetty-9.4.3.v20170317
+2017-05-25 13:18:40.120:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@14acaea5{/,null,AVAILABLE}
+2017-05-25 13:18:40.138:INFO:osjs.AbstractConnector:main: Started ServerConnector@464bee09{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-05-25 13:18:40.138:INFO:osjs.Server:main: Started @395ms
+13:18:40.138 INFO - Selenium Server is up and running

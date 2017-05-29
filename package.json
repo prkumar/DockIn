@@ -4,9 +4,9 @@
   "description": "Checking In Made Simple",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thiefjack/WebStormTroopers"
+    "url": "https://github.com/prkumar/Emissary"
   },
-  "author": "Eduardo Aguilar",
+  "author": "Anchor Buddies",
   "scripts": {
     "postinstall": "bower install && gulp build:prod",
     "start": "node server/app.js",
@@ -68,6 +68,7 @@
   "devDependencies": {
     "chai": "1.10.0",
     "gulp-angular-htmlify": "2.3.0",
+    "gulp-nightwatch": "^0.3.2",
     "gulp-util": "3.0.4",
     "karma-mocha": "0.1.10",
     "karma-phantomjs-launcher": "0.1.4",

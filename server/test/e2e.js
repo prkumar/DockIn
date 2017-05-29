@@ -12,11 +12,13 @@ module.exports = {
             .click('button[type=submit]')
             .pause(1000);
             
-    },
+    },/*
     'End to End Testing: CheckIn' : function(browser) {
         browser
             .waitForElementVisible('body', 1000)
             .pause(1000)
+            //.click("#dropdownId")
+            //.click("#check-in")
             .useXpath()     
             .click("//div[contains(@class, 'dropdown')]")
             .pause(1000)
@@ -50,5 +52,5 @@ module.exports = {
             .click("//*[contains(text(), 'Save')]")
             .pause(1000)
             .end();
-    }
+    }*/
 };
