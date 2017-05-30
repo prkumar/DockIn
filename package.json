@@ -28,7 +28,6 @@
     "express": "4.11.0",
     "express-session": "1.10.1",
     "gulp": "3.9.1",
-    "gulp-apidoc": "^0.2.6",
     "gulp-codeclimate-reporter": "^1.2.0",
     "gulp-istanbul": "^1.1.1",
     "gulp-angular-htmlify": "2.1.1",
