@@ -1,6 +1,6 @@
 // with Button named loginButton
 $(function() {
-   $('#loginButton').click(function () {
+   $('#loginButton').click(function (event) {
        var userData = grabUserData();
        //alert(userData);
        event.preventDefault();
