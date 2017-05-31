@@ -35,7 +35,8 @@
       "locator": {
         "type": "id",
         "value": "loginButton"
-      }
+      },
+      "passed": "true"
     }
   ],
   "data": {
