@@ -1,4 +1,6 @@
 {
+  "name": "Login Test",
+  "passed": "true", 
   "type": "script",
   "seleniumVersion": "2",
   "formatVersion": 2,
@@ -35,8 +37,7 @@
       "locator": {
         "type": "id",
         "value": "loginButton"
-      },
-      "passed": "true"
+      }
     }
   ],
   "data": {
