@@ -1,5 +1,6 @@
 {
     "type": "interpreter-config",
+    "passed": "true", 
     "configurations": [
     {
         "settings": [

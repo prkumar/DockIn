@@ -1,6 +1,6 @@
 {
-  "name": "Login Test",
-  "passed": "true", 
+  //"name": "Login Test",
+  //"passed": "true", 
   "type": "script",
   "seleniumVersion": "2",
   "formatVersion": 2,
