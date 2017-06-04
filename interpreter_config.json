@@ -1,6 +1,5 @@
 {
     "type": "interpreter-config",
-    "passed": "true", 
     "configurations": [
     {
         "settings": [
@@ -17,7 +16,7 @@
         }
         ],
         "scripts": [
-            "client/test/selenium/login-e2e.json"
+            "client/test/selenium/login.json"
         ]
     }
     ]
