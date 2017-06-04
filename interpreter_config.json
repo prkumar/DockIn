@@ -16,7 +16,7 @@
         }
         ],
         "scripts": [
-            "client/test/selenium/login.json"
+            "client/test/selenium/*"
         ]
     }
     ]
