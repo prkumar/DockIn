@@ -40,54 +40,95 @@
     {
       "type": "clickElement",
       "locator": {
-        "type": "xpath",
-        "value": "//div[@class='row']/div[2]/ul/div/i"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
         "type": "link text",
-        "value": "Check-In"
+        "value": "Appointments"
       }
     },
     {
       "type": "clickElement",
       "locator": {
         "type": "css selector",
-        "value": "p"
+        "value": "div.add-button"
       }
     },
     {
       "type": "setElementText",
       "locator": {
         "type": "id",
-        "value": "visitor-first"
+        "value": "appt-first"
       },
-      "text": "Anchor"
+      "text": "Thomas"
     },
     {
       "type": "setElementText",
       "locator": {
         "type": "id",
-        "value": "visitor-last"
+        "value": "appt-last"
       },
-      "text": "Buddy"
+      "text": "Powell"
     },
     {
       "type": "setElementText",
       "locator": {
         "type": "id",
-        "value": "visitor-number"
+        "value": "appt-number"
       },
       "text": "(123) 456-7890"
     },
     {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "appt-provider"
+      },
+      "text": "UCSD SHIP"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "appt-date"
+      },
+      "text": "06/03/17"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "appt-time"
+      },
+      "text": "7:02 PM"
+    },
+    {
       "type": "clickElement",
       "locator": {
-        "type": "css selector",
-        "value": "input.submit-check-in"
+        "type": "xpath",
+        "value": "//div[@class='modal-footer']//button[.='Save']"
       }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Thomas"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Powell"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "UCSD SHIP"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "(123) 456-7890"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "06/03/2017"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "12:02PM"
     }
   ],
   "data": {
