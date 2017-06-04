@@ -21,7 +21,7 @@ install:
 script:
   - gulp test:server
   # TODO: Run selenium tests (under client/test/selenium)
-  - "se-interpreter --listener=./utils/sauce_listener.js my_interpreter_config.json"
+  - "se-interpreter --listener=sauce_listener.js my_interpreter_config.json"
 
 env:
   global:
