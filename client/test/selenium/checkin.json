@@ -38,7 +38,7 @@
       }
     },
     {
-      "type": "verifyElementPresent",
+      "type": "clickElement",
       "locator": {
         "type": "xpath",
         "value": "//div[@class='row']/div[2]/ul/div/i"
@@ -72,7 +72,7 @@
         "type": "id",
         "value": "visitor-last"
       },
-      "text": "Buddies"
+      "text": "Buddy"
     },
     {
       "type": "setElementText",
@@ -90,51 +90,29 @@
       }
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "css selector",
-        "value": "p"
-      }
+      "type": "goBack"
     },
     {
-      "type": "setElementText",
-      "locator": {
-        "type": "id",
-        "value": "visitor-first"
-      },
+      "type": "goBack"
+    },
+    {
+      "type": "verifyTextPresent",
       "text": "Anchor"
     },
     {
-      "type": "setElementText",
-      "locator": {
-        "type": "id",
-        "value": "visitor-last"
-      },
-      "text": "Buddies2"
-    },
-    {
-      "type": "setElementText",
-      "locator": {
-        "type": "id",
-        "value": "visitor-number"
-      },
-      "text": "(123) 456-7890"
+      "type": "verifyTextPresent",
+      "text": "First: Anchor Last: Buddy Appointment Time: None Check-In Time: 6:50PM Phone Number: (123) 456-7890"
     },
     {
       "type": "clickElement",
       "locator": {
-        "type": "css selector",
-        "value": "input.submit-check-in"
+        "type": "xpath",
+        "value": "//div[@class='modal-footer']//button[.='Cancel']"
       }
     },
     {
-      "type": "goBack"
-    },
-    {
-      "type": "goBack"
-    },
-    {
-      "type": "goBack"
+      "type": "verifyTextPresent",
+      "text": "Hello, Anchor Buddies Check-In"
     }
   ],
   "data": {
