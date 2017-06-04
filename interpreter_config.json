@@ -8,6 +8,7 @@
                 "host": "ondemand.saucelabs.com",
                 "port": 80
             },
+            
             "browserOptions": {
                 "browserName": "firefox",
                 
@@ -15,11 +16,13 @@
                 "accessKey": "${SAUCE_ACCESSKEY}" 
             }
         },
-        {
+
+       {
             "driverOptions": {
                 "host": "ondemand.saucelabs.com",
                 "port": 80
             },
+            
             "browserOptions": {
                 "browserName": "chrome",
                 
@@ -27,6 +30,7 @@
                 "accessKey": "${SAUCE_ACCESSKEY}" 
             }
         }
+
         ],
         "scripts": [
             "client/test/selenium/*"
