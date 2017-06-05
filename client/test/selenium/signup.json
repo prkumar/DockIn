@@ -1,3 +1,5 @@
+{ 
+}
 /* test fails when signing up with used/old account -- FIX ISSUE
 {
   "type": "script",
