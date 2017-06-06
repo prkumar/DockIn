@@ -8,15 +8,12 @@
                 "host": "ondemand.saucelabs.com",
                 "port": 80
             },
-            
             "browserOptions": {
                 "browserName": "firefox",
-                
                 "username": "${SAUCE_USERNAME}",
                 "accessKey": "${SAUCE_ACCESSKEY}" 
             }
         }
-
         ],
         "scripts": [
             "client/test/selenium/*"

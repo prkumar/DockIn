@@ -5,7 +5,44 @@
   "steps": [
     {
       "type": "get",
-      "url": "http://emissary-2.herokuapp.com/employees"
+      "url": "http://emissary-2.herokuapp.com/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "LOGIN"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "username"
+      },
+      "text": "cse112@anchorbuddies.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      },
+      "text": "cse112"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "loginButton"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Employees"
+      }
     },
     {
       "type": "clickElement",
@@ -36,7 +73,7 @@
         "type": "id",
         "value": "employee-email"
       },
-      "text": "anchorbuddy@anchorbuddies.com"
+      "text": "cse112@anchorbuddy.com"
     },
     {
       "type": "setElementText",
@@ -83,7 +120,7 @@
     },
     {
       "type": "verifyTextPresent",
-      "text": "anchorbuddy@anchorbuddies.com"
+      "text": "cse112@anchorbuddy.com"
     }
   ],
   "data": {
