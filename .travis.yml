@@ -14,13 +14,10 @@ install:
   - nvm install 0.10
   - npm install -g gulp bower foreman
   - npm install
-  # TODO: Add end-to-end testing
   - npm install -g se-interpreter
-  # - npm install sauce-connect
 
 script:
   - gulp test:server
-  # TODO: Run selenium tests (under client/test/selenium)
   - "se-interpreter --listener=sauce_listener.js interpreter_config.json"
 
 env:
