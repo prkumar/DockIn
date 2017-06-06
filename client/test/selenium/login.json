@@ -5,57 +5,37 @@
   "steps": [
     {
       "type": "get",
-      "url": "http://webstormtroopers.herokuapp.com/login.html"
+      "url": "http://emissary-2.herokuapp.com/"
     },
     {
-      "type": "verifyElementPresent",
+      "type": "clickElement",
       "locator": {
-        "type": "css selector",
-        "value": "img"
+        "type": "link text",
+        "value": "LOGIN"
       }
     },
     {
-      "type": "verifyTextPresent",
-      "text": "Dear user, log in to access the admin area"
-    },
-    {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "css selector",
-        "value": "i.entypo-user"
-      }
-    },
-    {
-      "type": "verifyElementValue",
+      "type": "setElementText",
       "locator": {
         "type": "id",
         "value": "username"
       },
-      "value": ""
+      "text": "cse112@anchorbuddies.com"
     },
     {
-      "type": "verifyElementValue",
+      "type": "setElementText",
       "locator": {
         "type": "id",
         "value": "password"
       },
-      "value": ""
+      "text": "cse112"
     },
     {
-      "type": "verifyTextPresent",
-      "text": "Login"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "Forgot password"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "ToS"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "Privacy Policy"
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "loginButton"
+      }
     }
   ],
   "data": {
