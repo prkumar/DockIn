@@ -67,14 +67,6 @@ module.exports.template.get = function(req, res) {
     });
 };
 
-module.exports.template.getByName = function(req, res) {
-    Appointment.findOne({name: req.params.name}, function(err, a) {
-        if(err || !a)
-            return res.status(400).send({error: "Could Not Find"});
-        return res.status(200).json(a);
-    });
-};
-
 module.exports.template.update = function(req, res){
     Appointment.findOne({_id: req.params.id}, function (err, a) {
         if(err || !a)

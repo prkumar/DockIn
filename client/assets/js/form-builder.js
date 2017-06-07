@@ -28,3 +28,5 @@ $('.my-form').on('click', '.remove-box', function(){
     });
     return false;
 });
+
+//submit form function
