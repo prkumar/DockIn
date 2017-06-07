@@ -1,0 +1,132 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://emissary-2.herokuapp.com/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "LOGIN"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "username"
+      },
+      "text": "cse112@anchorbuddies.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      },
+      "text": "cse112"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "loginButton"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Employees"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.add-button"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "employee-first"
+      },
+      "text": "Anchor"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "employee-last"
+      },
+      "text": "Buddy"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "employee-email"
+      },
+      "text": "cse112@anchorbuddy.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "employee-number"
+      },
+      "text": "1234567890"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "employee-pw"
+      },
+      "text": "cse112"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "employee-confirm-pw"
+      },
+      "text": "cse112"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='modal-footer']//button[.='Save']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Anchor"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Buddy"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "1234567890"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "cse112@anchorbuddy.com"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}

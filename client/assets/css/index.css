@@ -1,0 +1,44 @@
+.wrap {
+    background: #051f2d;
+}
+
+
+/* NOTE: Modify border colour. navbar */
+
+.navbar {
+    background-color: #051f2d;
+    border-color: white;
+    background-image: none;
+    border-color: white;
+}
+
+
+/* subject to change. */
+
+.navbar .navbar-brand {
+    color: white;
+    font-family: 'beirut';
+}
+
+.head1 {
+    color: white;
+    font-family: "helvetica";
+}
+
+
+/* NOTE: Figure out how to change. */
+
+.navbar-nav li:last-child {
+    color: white;
+}
+
+#wrapper {
+    height: 100%;
+    width: 300px;
+    background-color: #051f2d;
+}
+
+#first {
+    background-color: #051f2d;
+    height: 200px;
+}
