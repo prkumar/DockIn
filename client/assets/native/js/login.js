@@ -1,11 +1,11 @@
 var isEmployee = null;
-// with Button named asVisitorButton
+// with Button named asEmployerButton
 $(function() {
-   $('#asVisitorButton').click(function (event) {
+   $('#asEmployerButton').click(function (event) {
        isEmployee = false;
        console.log("isEmployee: "+isEmployee);
        var elem = document.getElementById("loginAs");
-       elem.value = "Visitor";
+       elem.value = "Employer";
 
    });
 });
@@ -61,9 +61,11 @@ function ajaxPostUser(url, data){
              localStorage.setItem('currentUser', JSON.stringify(response));
              ajaxGetCompanyInfo('/api/companies/' + response.company_id);
              if(isEmployee == true){
-                location.href = '/visitors-employee-view.html';
+                localStorage.setItem('isEmployee', isEmployee);
+                location.href = '/visitors.html';
             }
             else if(isEmployee == false){
+                localStorage.setItem('isEmployee', isEmployee);
                 location.href = '/visitors.html';
             }
          }

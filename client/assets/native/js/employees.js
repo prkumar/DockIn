@@ -1,3 +1,10 @@
+$(function isEmployee(){
+     var isEmployee = localStorage.getItem('isEmployee');
+     console.log("im herer"+isEmployee);
+     if (isEmployee == 'true')
+       document.getElementById("addEmployee").style.visibility='hidden';
+   });
+
 $(document).ready(function(){
     var companyData = JSON.parse(localStorage.getItem("currentCompany"));
     var myCompanyId = companyData._id;
@@ -8,17 +15,16 @@ $(document).ready(function(){
     $('#user-name').text(curUser.first_name + ' ' +  curUser.last_name);
 
     var employees = getEmployees();
-    
+
     var source = $("#employee-list-template").html();
     var template = Handlebars.compile(source);
     var compiledHtml = template(employees);
-
     $("#employee-list").html(compiledHtml);
     $('.save-btn').click(submitForm);
 
-    
+
    /***
-     * Makes a get request to display list of employees 
+     * Makes a get request to display list of employees
      * @param none
      * @returns displays the employee list
      */
