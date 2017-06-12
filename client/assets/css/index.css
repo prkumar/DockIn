@@ -1,44 +1,81 @@
 .wrap {
-    background: #051f2d;
+    background: #192534;
 }
 
 
 /* NOTE: Modify border colour. navbar */
 
 .navbar {
-    background-color: #051f2d;
+    background-color: #192534;
     border-color: white;
     background-image: none;
-    border-color: white;
-}
+    }
 
 
 /* subject to change. */
 
 .navbar .navbar-brand {
-    color: white;
-    font-family: 'beirut';
+    color: #7dc7fd;
+    font-family: "Roboto", sans-serif;
 }
 
 .head1 {
     color: white;
-    font-family: "helvetica";
+    font-family: "Roboto", sans-serif;
 }
 
-
-/* NOTE: Figure out how to change. */
-
-.navbar-nav li:last-child {
+.headO {
     color: white;
+    font-family: "Roboto", sans-serif;    
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+
+
 }
+
+
+/*
+greenish -- #6ad59f 
+purple -- #af95ee
+blue -- #7dc7fd
+orangish/Gold -- #fdc082
+
+*/
+
+
+/* Make all fonts the same. */
+.nav.navbar-nav.navbar-right li a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.063rem;
+
+}
+
+/* Make Contact Sales a different color*/
+.nav.navbar-nav.navbar-right li:last-child > a {
+    color:#7586e8;
+    font-family: "Roboto", sans-serif;
+;
+}
+
+.lead {
+    font-family: "Roboto", sans-serif;
+
+
+
+}
+
 
 #wrapper {
     height: 100%;
     width: 300px;
-    background-color: #051f2d;
+    background-color: #192534;
 }
 
 #first {
-    background-color: #051f2d;
+    background-color: #192534;
     height: 200px;
 }
