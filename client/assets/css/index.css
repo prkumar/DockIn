@@ -7,21 +7,23 @@
 
 .navbar {
     background-color: #192534;
-    border-color: white;
+    border-bottom: 1px solid rgba(71,80,93,0.25);
     background-image: none;
+    
     }
 
 
 /* subject to change. */
 
 .navbar .navbar-brand {
-    color: #7dc7fd;
+    color: white;
     font-family: "Roboto", sans-serif;
 }
 
 .head1 {
     color: white;
     font-family: "Roboto", sans-serif;
+    text-align: left;
 }
 
 .headO {
@@ -31,9 +33,12 @@
     font-weight: 300;
     line-height: 1.2;
     margin-bottom: 1rem;
-
-
+    text-align: left;
 }
+
+
+
+
 
 
 /*
@@ -63,10 +68,14 @@ orangish/Gold -- #fdc082
 
 .lead {
     font-family: "Roboto", sans-serif;
-
-
-
+    text-align: left;
 }
+
+
+.bGroup{
+    background-color: white;
+}
+
 
 
 #wrapper {
