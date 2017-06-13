@@ -15,12 +15,23 @@ install:
   - npm install -g gulp bower foreman
   - npm install
   # TODO: Add end-to-end testing
-  # - npm install -g se-interpreter
+  - npm install -g se-interpreter
   # - npm install sauce-connect
 
 script:
   - gulp test:server
   # TODO: Run selenium tests (under client/test/selenium)
+  - "se-interpreter --listener=sauce_listener.js interpreter_config.json"
+
+env:
+  global:
+    - SAUCE_USERNAME=dlt009
+    - secure: "UoonhxRj4/23EXVMYEO/2eL23x2Nx7J0R7YpEwLQjJGjhGDLM1DdnP3hndhX2QUJ7paBxggc4Ojs/eW87Bx0zmi9okaY/Vd2PR3iY83G0Xgmp6lbA30ds/
+7C5CFlJrv3fu63jJnWR1onKRg58gae6slJc0BfWY78aUvap88lJD+nOW2aXIJTbjOyC13N4e/LFmbR43E1PCyNNsPQwzcquV0E5d5K0QgQSHaMSpU/z23u8g958MOsbRf
+oFFWYMo5DhHJ2fLDorfu2kpuE7GywnYpoI03N33EQzZjVwnnFBEfL9gSU9JAPA1AkH1NwdGwlJQBjIfQwZ9tbfw9HtQT3XdcXiuB3HRrjA/Shq2C7BL3cC/tYGK9JyFK0
+xnlFN4W3JZwhCHNYu/+WpP5ZoVVM4QvZbHed18qRuieKPhDSErIpn9J1BgeKIGX9K4wCNjfkp6KR7l/Dkl9lUKKDVNgEPOB/2HT4tkcUiPTx/r30llVk8IJSeUkon5Mpn
+UK/r+WMrsYsjyzM/ZU57HFtl/MxNSM7Z6ejKOF5yvhlAkRs/C613V7RDPJ3IyEOUwGDOpqZ94XGhwu9ydsluVuhHJNlX6VRCNgW4e/ObGMbIg7tt95a/b+RLzTf2hHxNP
+RzH9Pi959A4RjVCjgDEU4Zt+O3KNUFl/ferBJWvpErRLs1oWw="
 
 after_success:
   - npm run codeclimate
@@ -40,3 +51,4 @@ deploy:
 addons:
   code_climate:
     repo_token: 0ad5a8a20f54533cde0460e45b51d417da57b12d6ba4e8b0f4bc9ea68da087cd
+  sauce_connect: true
