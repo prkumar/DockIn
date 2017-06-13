@@ -1,39 +1,38 @@
 .wrap {
-    background: #1e2f3d;
+    background: white;
 }
 
 
 /* NOTE: Modify border colour. navbar */
 
 .navbar {
-    background-color: #1e2f3d;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(71, 80, 93, 0.25);
+    background-color: white;
     background-image: none;
-    padding-top: 0.6rem;
-    padding-right: 0px;
-    padding-bottom: 0.6rem;
-    padding-left: 0px;
+    border-color: #1e2b3d;
+
+    
 }
 
+.Top-Head{
+    background-color: grey
+    }
 
 /* subject to change. */
 
 .navbar .navbar-brand {
-    color: white;
-    font-family: "Roboto", sans-serif;
+    color: #1e2b3d;
+    font-family: "helvetica" sans-serif;
 }
 
 .head1 {
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "helvetica" sans-serif;
     text-align: left;
 }
 
 .headO {
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "helvetica" sans-serif;
     font-size: 3em;
     font-weight: 300;
     line-height: 1.2;
@@ -54,25 +53,27 @@ orangish/Gold -- #fdc082
 /* Make all fonts the same. */
 
 .nav.navbar-nav.navbar-right li a {
-    font-family: "Roboto", sans-serif;
+    font-family: "helvetica" sans-serif;
     font-size: 1.15rem;
     font-weight: 600;
     letter-spacing: 0.063rem;
+    color: #1e2b3d;
 }
 
+/*.nav.navbar-nav.navbar-right li:nth-of-type(3) a{
+    color: #af95ee
+}
 .nav.navbar-nav.navbar-right li:nth-of-type(4) a{
-    color: #7dc6fd;
-}
-.nav.navbar-nav.navbar-right li:nth-of-type(5) a{
-    color: #7dc6fd;
-}
+    color: #af95ee
+}*/
 /* Make Contact Sales a different color*/
 
 
 
 .lead {
-    font-family: "Roboto", sans-serif;
+    font-family: "helvetica" sans-serif;
     text-align: left;
+    color: #1e2b3d;
 }
 
 .bGroup {
@@ -100,7 +101,7 @@ orangish/Gold -- #fdc082
 
 .history-section{
     background-color: white;
-    height: 600px;
+    height: 510px;
 }
 .save-money-section{
     background-color: white;
@@ -113,16 +114,16 @@ orangish/Gold -- #fdc082
 }
 .Company-History{
     color: #7dc7fd;
-    font-family: "Roboto", sans-serif;
+    font-family: "helvetica" sans-serif;
 }
 .Finance-Impact{
     color: #6ad59f;
-    font-family: "Roboto", sans-serif;
+    font-family: "helvetica" sans-serif;
 }
 
 .Tech-Stack{
     color: #af95ee;
-    font-family: "Roboto", sans-serif;
+    font-family: "helvetica" sans-serif;
 }
 
 .block-1{
@@ -140,7 +141,7 @@ orangish/Gold -- #fdc082
 
 .head2{
 color: #1e2b3d;
-    font-family: "helvetica";
+    font-family: "helvetica" sans-serif;
 }
 
 .trial-block{
