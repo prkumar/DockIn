@@ -1,12 +1,12 @@
 .wrap {
-    background: #192534;
+    background: #1e2f3d;
 }
 
 
 /* NOTE: Modify border colour. navbar */
 
 .navbar {
-    background-color: #192534;
+    background-color: #1e2f3d;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgba(71, 80, 93, 0.25);
@@ -60,7 +60,12 @@ orangish/Gold -- #fdc082
     letter-spacing: 0.063rem;
 }
 
-
+.nav.navbar-nav.navbar-right li:nth-of-type(4) a{
+    color: #7dc6fd;
+}
+.nav.navbar-nav.navbar-right li:nth-of-type(5) a{
+    color: #7dc6fd;
+}
 /* Make Contact Sales a different color*/
 
 
@@ -78,16 +83,16 @@ orangish/Gold -- #fdc082
 #wrapper {
     height: 100%;
     width: 300px;
-    background-color: #192534;
+    background-color: #1e2b3d;
 }
 
 #first {
-    background-color: #192534;
+    background-color: #1e2b3d;
     height: 200px;
 }
 
 .features-blocks{
-    background-color: rgb(21, 32, 46);
+    background-color: #1e2b3d;
     height: 150px;
 
 }
@@ -121,25 +126,25 @@ orangish/Gold -- #fdc082
 }
 
 .block-1{
-    background-color: #192534;
+    background-color: #1e2b3d;
     height: 150px;
     
 }
 
 
 .block-2{
-    background-color: #192534;
+    background-color: #1e2b3d;
     height: 150px;
     
 }
 
 .head2{
-color: #192534;
+color: #1e2b3d;
     font-family: "helvetica";
 }
 
 .trial-block{
-    background-color: #192534;
+    background-color: #1e2b3d;
     height: 150px;
     
 }
