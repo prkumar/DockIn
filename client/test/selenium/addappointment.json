@@ -1,0 +1,140 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://emissary-2.herokuapp.com/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "LOGIN"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "username"
+      },
+      "text": "cse112@anchorbuddies.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      },
+      "text": "cse112"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "loginButton"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Appointments"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.add-button"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "appt-first"
+      },
+      "text": "Thomas"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "appt-last"
+      },
+      "text": "Powell"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "appt-number"
+      },
+      "text": "(123) 456-7890"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "appt-provider"
+      },
+      "text": "UCSD SHIP"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "appt-date"
+      },
+      "text": "06/03/17"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "appt-time"
+      },
+      "text": "7:02 PM"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='modal-footer']//button[.='Save']"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Thomas"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Powell"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "UCSD SHIP"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "(123) 456-7890"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "06/03/2017"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "12:02PM"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}

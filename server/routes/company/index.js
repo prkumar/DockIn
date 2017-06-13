@@ -8,6 +8,7 @@ var router = express.Router();
 router.post('/', 			controller.template.create);
 router.get('/:id', 			controller.template.get);
 router.get('/', 			controller.template.getAll);
+router.get('/name/:name',         controller.template.getByName);
 router.put('/:id',          controller.template.update);
 router.delete('/:id',       controller.template.delete);
 
