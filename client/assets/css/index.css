@@ -7,8 +7,8 @@
 
 .navbar {
     background-color: white;
-    background-image: none;
     border-color: #1e2b3d;
+    background-image: none;
 
     
 }
@@ -22,6 +22,7 @@
 .navbar .navbar-brand {
     color: #1e2b3d;
     font-family: "helvetica" sans-serif;
+    
 }
 
 .head1 {
@@ -117,12 +118,12 @@ orangish/Gold -- #fdc082
     font-family: "helvetica" sans-serif;
 }
 .Finance-Impact{
-    color: #6ad59f;
+    color: #1e2b3d;
     font-family: "helvetica" sans-serif;
 }
 
 .Tech-Stack{
-    color: #af95ee;
+    color: #1e2b3d;
     font-family: "helvetica" sans-serif;
 }
 
