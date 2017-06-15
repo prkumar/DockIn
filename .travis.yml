@@ -15,13 +15,14 @@ install:
   - npm install -g gulp bower foreman
   - npm install
   # TODO: Add end-to-end testing
-  - npm install -g se-interpreter
+  #- npm install -g se-interpreter
   # - npm install sauce-connect
 
-script:
-  - gulp test:server
+#script:
+  #- gulp test:server
   # TODO: Run selenium tests (under client/test/selenium)
-  - "se-interpreter --listener=sauce_listener.js interpreter_config.json"
+  #- "se-interpreter --listener=sauce_listener.js interpreter_config.json"
+  
 
 env:
   global:
@@ -33,8 +34,8 @@ xnlFN4W3JZwhCHNYu/+WpP5ZoVVM4QvZbHed18qRuieKPhDSErIpn9J1BgeKIGX9K4wCNjfkp6KR7l/D
 UK/r+WMrsYsjyzM/ZU57HFtl/MxNSM7Z6ejKOF5yvhlAkRs/C613V7RDPJ3IyEOUwGDOpqZ94XGhwu9ydsluVuhHJNlX6VRCNgW4e/ObGMbIg7tt95a/b+RLzTf2hHxNP
 RzH9Pi959A4RjVCjgDEU4Zt+O3KNUFl/ferBJWvpErRLs1oWw="
 
-after_success:
-  - npm run codeclimate
+#after_success:
+ # - npm run codeclimate
 
 notifications:
   email: false
