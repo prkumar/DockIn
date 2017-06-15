@@ -24,6 +24,18 @@ var jwt = require('jwt-simple');
 module.exports.template = {};
 
 /**signup- Used to sign up a user.*/
+/**
+ * @api {put} /server/routes/company Creates a company on the server
+ * @apiName create
+ * @apiGroup company
+ * 
+ * @apiParam {String} email The contact email for the company
+ * @apiParam {String} name The name of the company
+ * @apiParam {String} phone_number The contact phone number of the company
+ * @apiParam {Date} paid_time The time of payment given for service
+ * 
+ * @apiError ServerNotResponding {String} Could Not Save
+ */
 module.exports.template.create = function(req, res) {
     var company = new Company();
 
@@ -48,6 +60,13 @@ module.exports.template.create = function(req, res) {
 };
 
 /**get All the companies*/
+/**
+ * @api {get} /server/routes/company Requests for all companies on the server
+ * @apiName getAll
+ * @apiGroup company
+ * 
+ * @apiError ServerNotResponding 
+ */
 module.exports.template.getAll = function(req, res) {
     Company.find({},
         {
@@ -63,15 +82,33 @@ module.exports.template.getAll = function(req, res) {
 };
 
 /**authLogin- logs in a user*/
+/**
+ * @api {get} /server/routes/company Gets a company by id
+ * @apiName get
+ * @apiGroup company
+ * 
+ * @apiParam {ObjectID} id The id number of the company
+ * 
+ * @apiError ServerNotResponding {String} Could Not Save Company
+ */
 module.exports.template.get = function(req, res) {
     Company.findOne({_id: req.params.id}, function(err, company) {
         if(err)
-            return res.status(400).json({error: "Could Not Save"});
+            return res.status(400).json({error: "Could Not Save Company"});
         return res.status(200).json(showCompanyPublicInfo(company));
     });
 };
 
 /** get company by its name*/
+/**
+ * @api {get} /server/routes/company Gets a company by name
+ * @apiName getByName
+ * @apiGroup company
+ * 
+ * @apiParam {String} name The name of the company
+ * 
+ * @apiError ServerNotResponding {String} Could Not Save Company
+ */
 module.exports.template.getByName = function(req, res) {
     Company.findOne({name: req.params.name}, function(err, a) {
         if(err || !a)
@@ -81,10 +118,23 @@ module.exports.template.getByName = function(req, res) {
 };
 
 /* update the company info */
+/**
+ * @api {set} /server/routes/company Updates a company on the server
+ * @apiName update
+ * @apiGroup company
+ * 
+ * @apiParam {String} email The contact email for the company
+ * @apiParam {String} name The name of the company
+ * @apiParam {String} phone_number The contact phone number of the company
+ * @apiParam {Date} paid_time The time of payment given for service
+ * 
+ * @apiError CompanyNotFound {String} Could Not Find Company
+ * @apiError ServerNotResponding {String} Could Not Save Company
+ */
 module.exports.template.update = function(req, res){
     Company.findOne({_id: req.params.id}, function (err, c) {
         if(err || !c)
-            return res.status(401).json({error: "Could Not Find"});
+            return res.status(401).json({error: "Could Not Find Company"});
 
         //update email
         if (req.body.email !== undefined)
@@ -100,7 +150,7 @@ module.exports.template.update = function(req, res){
 
         c.save(function(err) {
             if(err) {
-                return res.status(400).json({error: "Could Not Save"});
+                return res.status(400).json({error: "Could Not Save Company"});
             }
             return res.status(200).json(showCompanyPublicInfo(c));
         });
@@ -108,13 +158,23 @@ module.exports.template.update = function(req, res){
 };
 
 /* delete company */
+/**
+ * @api {delete} /server/routes/company deletes a company from the server
+ * @apiName delete
+ * @apiGroup company
+ * 
+ * @apiParam {ObjectID} id The id of the company
+ * 
+ * @apiError CompanyNotFound {String} Could Not Find Company
+ * @apiError ServerNotResponding {String} Could Not Save Company
+ */
 module.exports.template.delete = function(req, res){
     Company.findById(req.params.id, function(err, c) {
         if(err)
-            res.status(400).json({error: "Could Not Find"});
+            res.status(400).json({error: "Could Not Find Company"});
         c.remove(function(err) {
             if(err) {
-                res.status(400).json({error: "Could Not Save"});
+                res.status(400).json({error: "Could Not Save Company"});
             } else {
                 return res.status(200).json(showCompanyPublicInfo(c));
             }
@@ -123,6 +183,21 @@ module.exports.template.delete = function(req, res){
 };
 
 /**authResetCredentials- resets a user's credentials*/
+/**
+ * @api {put} /server/routes/company Creates a company on the server
+ * @apiName create
+ * @apiGroup company
+ * 
+ * @apiParam {User} user The user being reset
+ * @apiParam {String} password The password for the user
+ * @apiParam {String} newpassword The new password to be set to user
+ * @apiParam {String} newemail The new email to be set to user
+ * @apiParam {String} new_company_name The new company name to be set to user
+ * @apiParam {String} new_phone_number The new phone number to be set to user
+ * 
+ * @apiError UserNotFound {String} Could Not Find Company
+ * @apiError ServerNotResponding {String} Could Not Save Company
+ */
 module.exports.template.resetCredentials = function(req, res) {
     Company.findOne({email: req.params.user}, function (err, c) {
         if(err || !c)
@@ -152,13 +227,29 @@ module.exports.template.resetCredentials = function(req, res) {
 
         c.save(function(err) {
             if(err) {
-                res.status(400).send({error: "Could Not Save"});
+                res.status(400).send({error: "Could Not Save Company"});
             }
         });
         return res.status(200).json(showCompanyPublicInfo(c));
     });
 };
 
+/**
+ * @api {print} /server/routes/company Displays the public info of the company
+ * @apiName showCompanyPublicInfo
+ * @apiGroup company
+ * 
+ * @apiParam {Company} c The company having their info displayed
+ * 
+ * @apiSuccessExample {json} Success-Response:
+ *      {
+ *          id: c._id,
+            name: c.name,
+            email: c.email,
+            phone_number: c.phone_number,
+            paid_time: c.paid_time  
+ *      }
+ */
 function showCompanyPublicInfo(c){
     return {
         _id: c._id,

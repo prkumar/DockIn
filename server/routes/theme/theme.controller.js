@@ -18,12 +18,26 @@ var Theme = require('../../models/Theme');
 /*********************** THEME TEMPLATE ROUTES ***********************/
 module.exports.template = {};
 
+/**
+ * @api {start} /server/routes/theme Begins logging 
+ * @apiName use
+ * @apiGroup theme
+ */
 module.exports.template.use = function(req, res, next) {
     // do logging
     console.log('Intializing.....');
     next();
 };
 
+/**
+ * @api {put} /server/routes/theme Creates a theme on the server
+ * @apiName create
+ * @apiGroup theme 
+ * 
+ * @apiParam {Number} user_id The id of the company or user
+ *
+ * @apiError ServerNotResponding
+ */
 module.exports.template.create = function(req, res) {
     var theme = new Theme();
     theme.user_id = req.params.user_id; //company or user id
@@ -43,6 +57,15 @@ module.exports.template.create = function(req, res) {
 
 };
 
+/**
+ * @api {get} /server/routes/theme Get a theme by user id
+ * @apiName get
+ * @apiGroup theme
+ * 
+ * @apiParam {Number} user_id The id of the user or company
+ * 
+ * @apiError ServerNotResponding
+ */
 module.exports.template.get = function(req, res) {
     Theme.findOne({
         user_id: req.params.user_id
@@ -54,6 +77,15 @@ module.exports.template.get = function(req, res) {
     });
 };
 
+/**
+ * @api {set} /server/routes/theme Updates the theme used by a user or company
+ * @apiName update
+ * @apiGroup theme
+ * 
+ * @apiParam {Number} user_id The id of the company or user
+ * 
+ * @apiError ServerNotResponding
+ */
 module.exports.template.update = function(req, res) {
 
     Theme.findOne({
@@ -87,6 +119,16 @@ module.exports.template.update = function(req, res) {
     });
 };
 
+/**
+ * @api {delete} /server/routes/theme Deletes a theme from the server
+ * @apiName delete
+ * @apiGroup theme
+ * 
+ * @apiParam {Number} user_id The id of the user or company
+ * 
+ * @apiError ServerNotResponding
+ * @apiSuccess {String} OK
+ */
 module.exports.template.delete = function(req, res) {
 
     Theme.remove({
