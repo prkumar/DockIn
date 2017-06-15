@@ -17,8 +17,7 @@ http://dockin.herokuapp.com
 ### 1.1 List of Requirements
 1. **Node.js** (http://nodejs.org/)
 2. **MongoDB** (https://www.mongodb.org/)
-3. **HandleBars** (http://handlebarsjs.com/)
-4. **jQuery** (https://jquery.com/)
+3. **jQuery** (https://jquery.com/)
 
 ### 1.2 Instructions
 **Step 1:** Do a `git clone` on our project on **Github** (https://github.com/thiefjack/WebStormTroopers/).
