@@ -101,8 +101,9 @@ exports.createServer = function(io_in) {
                 }
                 else {
                     var checkin_time = new Date(Date.parse(data.checkin_time))
-                    var date_readable = checkin_time.toLocaleDateString();
-                    var message = data.first_name + " " + data.last_name + " checked in at " + date_readable;
+                    var locale_date = checkin_time.toLocaleString();
+                    var locale_time = checkin_time.toLocaleTimeString();
+                    var message = data.first_name + " " + data.last_name + " checked in on " + locale_date + " at " + locale_time;
                     if(data.first_name !== undefined)
                     {
                         slack.send({
