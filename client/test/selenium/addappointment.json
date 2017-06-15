@@ -5,7 +5,7 @@
   "steps": [
     {
       "type": "get",
-      "url": "http://emissary-2.herokuapp.com/"
+      "url": "http://dockin.herokuapp.com/"
     },
     {
       "type": "clickElement",
