@@ -236,6 +236,12 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 
+
+.description{
+	color: #7dc7fd;
+
+}
+
 #errorlog
 {
 	color: red;
