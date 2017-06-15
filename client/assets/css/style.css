@@ -230,7 +230,7 @@ only screen and (                min-resolution: 2dppx) {
 	
 	 /*logo */
     .navbar-brand {
-    	background-image: url(../images/Dockin.png) !important; background-repeat: no-repeat !important; background-size: 49px 49px !important;
+    	background-image: url(../images/DockIn.png) !important; background-repeat: no-repeat !important; background-size: 49px 49px !important;
     }
 
 }
