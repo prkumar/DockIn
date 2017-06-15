@@ -1,11 +1,35 @@
+var isEmployee = null;
+// with Button named asEmployerButton
+$(function() {
+   $('#asEmployerButton').click(function (event) {
+       isEmployee = false;
+       console.log("isEmployee: "+isEmployee);
+       var elem = document.getElementById("loginAs");
+       elem.value = "Employer";
+
+   });
+});
+
+// with Button named asEmployeeButton
+$(function() {
+   $('#asEmployeeButton').click(function (event) {
+       isEmployee = true;
+       console.log("isEmployee: "+isEmployee);
+       var elem = document.getElementById("loginAs");
+       elem.value = "Employee";
+   });
+});
+
 // with Button named loginButton
 $(function() {
    $('#loginButton').click(function (event) {
        var userData = grabUserData();
        //alert(userData);
        event.preventDefault();
+       if(isEmployee == null)
+          errorlog.innerHTML="Please select who to login as.";
        ajaxPostUser('/api/employees/login', userData);
-       
+
    });
 });
 
@@ -36,7 +60,14 @@ function ajaxPostUser(url, data){
              localStorage.setItem('userState' , 1);
              localStorage.setItem('currentUser', JSON.stringify(response));
              ajaxGetCompanyInfo('/api/companies/' + response.company_id);
-             location.href = '/visitors.html';
+             if(isEmployee == true){
+                localStorage.setItem('isEmployee', isEmployee);
+                location.href = '/visitors.html';
+            }
+            else if(isEmployee == false){
+                localStorage.setItem('isEmployee', isEmployee);
+                location.href = '/visitors.html';
+            }
          }
        },
        error: function() {
