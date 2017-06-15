@@ -15,7 +15,7 @@ var mongoose = require('mongoose');
 var socketIO = require('./socket/socket');
 var MY_STRIPE_TEST_KEY = 'sk_test_dqzYJJ6xWGgg6U1hgQr3hNye';
 var stripe = require ('stripe')(MY_STRIPE_TEST_KEY);
-var MY_SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/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';
+var MY_SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/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';
 var slack = require('slack-notify')(MY_SLACK_WEBHOOK_URL);
 //var oauthserver = require('oauth2-server');
 var newrelic = require('newrelic');
@@ -133,7 +133,10 @@ app.get('/admin-settings', function(req,res){
 });
 app.get('/index', function(req,res){
   res.sendFile(path.join(__dirname,'../dist/assets/views/index.html'))
-});   
+});
+
+
+
 /*
  * Error Handler.
  */

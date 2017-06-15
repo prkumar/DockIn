@@ -14,6 +14,9 @@ var REMOVE_VISITOR = "remove_visitor";
 var ADD_VISITOR = "add_visitor";
 var NOTIFY_ERROR = "notify_error";
 
+var MY_SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/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';
+var slack = require('slack-notify')(MY_SLACK_WEBHOOK_URL);
+
 var VisitorListCtr = require('../routes/visitorList/visitorList.controller');
 var Company = require('../models/Company');
 /********** Socket IO Module **********/
@@ -97,6 +100,15 @@ exports.createServer = function(io_in) {
                     exports.notifyError(company_id, {error: err_msg});
                 }
                 else {
+                    var message = data.first_name + " " + data.last_name + " Scheduled an appointment for " + data.checkin_time;
+                    if(data.first_name !== undefined)
+                    {
+                        slack.send({
+                            channel: '#checkin',
+                            text: message,
+                            username: 'CheckInBot'
+                        });
+                    }
                     exports.notifyNewList(company_id, result);
                 }
             });
