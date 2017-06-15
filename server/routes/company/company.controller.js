@@ -53,7 +53,7 @@ module.exports.template.create = function(req, res) {
 
     company.save(function(err, c) {
         if(err) {
-            return res.status(400).json({error: "Could Not Save"});
+            return res.status(400).json({error: "Could Not Save Company <--"});
         }
         return res.status(200).json(showCompanyPublicInfo(c));
     });
@@ -107,12 +107,12 @@ module.exports.template.get = function(req, res) {
  * 
  * @apiParam {String} name The name of the company
  * 
- * @apiError ServerNotResponding {String} Could Not Save Company
+ * @apiError ServerNotResponding {String} Could Not Find Company
  */
 module.exports.template.getByName = function(req, res) {
     Company.findOne({name: req.params.name}, function(err, a) {
         if(err || !a)
-            return res.status(400).send({error: "Could Not Find"});
+            return res.status(400).send({error: "Could Not Find Company"});
         return res.status(200).json(a);
     });
 };
@@ -201,7 +201,7 @@ module.exports.template.delete = function(req, res){
 module.exports.template.resetCredentials = function(req, res) {
     Company.findOne({email: req.params.user}, function (err, c) {
         if(err || !c)
-            return res.status(400).json({error: "Could Not Find"});
+            return res.status(400).json({error: "Could Not Find Company"});
 
 
         // if the user is found but the password is wrong
