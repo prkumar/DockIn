@@ -71,6 +71,15 @@ module.exports.template.get = function(req, res) {
     });
 };
 
+/** get company by its name*/
+module.exports.template.getByName = function(req, res) {
+    Company.findOne({name: req.params.name}, function(err, a) {
+        if(err || !a)
+            return res.status(400).send({error: "Could Not Find"});
+        return res.status(200).json(a);
+    });
+};
+
 /* update the company info */
 module.exports.template.update = function(req, res){
     Company.findOne({_id: req.params.id}, function (err, c) {

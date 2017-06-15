@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="./../assets/css/neon-forms.css">
 	<link rel="stylesheet" href="./../assets/css/custom.css">
 	<script src="./../assets/js/jquery-1.11.3.min.js"></script>
-
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 	
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -50,11 +50,11 @@
 			<header class="logo-env">
 
 				<!-- logo -->
-				<div class="logo">
+				<!--div class="logo">
 					<a href="admin-dashboard.html">
 						<img src="./../images/emissary.png" width="150" alt="" />
 					</a>
-				</div>
+				</div-->
 
 				<!-- logo collapse icon -->
 				<div class="sidebar-collapse">
@@ -137,256 +137,59 @@
 		
 		<hr />
 
-		<!-- TO DO: Move JS functions to js files -->
-		<script type="text/javascript">
-		jQuery(document).ready(function($)
-		{
-		
-			// Sparkline Charts
-			$('.inlinebar').sparkline('html', {type: 'bar', barColor: '#ff6264'} );
-			$('.inlinebar-2').sparkline('html', {type: 'bar', barColor: '#445982'} );
-			$('.inlinebar-3').sparkline('html', {type: 'bar', barColor: '#00b19d'} );
-			$('.bar').sparkline([ [1,4], [2, 3], [3, 2], [4, 1] ], { type: 'bar' });
-			$('.pie').sparkline('html', {type: 'pie',borderWidth: 0, sliceColors: ['#3d4554', '#ee4749','#00b19d']});
-			$('.linechart').sparkline();
-			$('.pageviews').sparkline('html', {type: 'bar', height: '30px', barColor: '#ff6264'} );
-			$('.uniquevisitors').sparkline('html', {type: 'bar', height: '30px', barColor: '#00b19d'} );
-		
-		
-			$(".monthly-sales").sparkline([], {
-				type: 'bar',
-				barColor: '#00a65a',
-				height: '80px',
-				barWidth: 10,
-				barSpacing: 2
-			});
-		
-		
-			// JVector Maps
-			var map = $("#map");
-		
-			map.vectorMap({
-				map: 'europe_merc_en',
-				zoomMin: '3',
-				backgroundColor: '#383f47',
-				focusOn: { x: 0.5, y: 0.8, scale: 3 }
-			});
-		
-		
-		
-			// Line Charts
-			var line_chart_demo = $("#line-chart-demo");
-		
-			var line_chart = Morris.Line({
-				element: 'line-chart-demo',
-				data: [
-					{ y: '2006', a: 100, b: 90 },
-					{ y: '2007', a: 75,  b: 65 },
-					{ y: '2008', a: 50,  b: 40 },
-					{ y: '2009', a: 75,  b: 65 },
-					{ y: '2010', a: 50,  b: 40 },
-					{ y: '2011', a: 75,  b: 65 },
-					{ y: '2012', a: 100, b: 90 }
-				],
-				xkey: 'y',
-				ykeys: ['a', 'b'],
-				labels: ['October 2013', 'November 2013'],
-				redraw: true
-			});
-		
-			line_chart_demo.parent().attr('style', '');
-		
-		
-			// Donut Chart
-			var donut_chart_demo = $("#donut-chart-demo");
-		
-			donut_chart_demo.parent().show();
-		
-			var donut_chart = Morris.Donut({
-				element: 'donut-chart-demo',
-				data: [
-					{label: "Download Sales", value: getRandomInt(10,50)},
-					{label: "In-Store Sales", value: getRandomInt(10,50)},
-					{label: "Mail-Order Sales", value: getRandomInt(10,50)}
-				],
-				colors: ['#707f9b', '#455064', '#242d3c']
-			});
-		
-			donut_chart_demo.parent().attr('style', '');
-		
-		
-			// Area Chart
-			var area_chart_demo = $("#area-chart-demo");
-		
-			area_chart_demo.parent().show();
-		
-			var area_chart = Morris.Area({
-				element: 'area-chart-demo',
-				data: [
-					{ y: '2006', a: 100, b: 90 },
-					{ y: '2007', a: 75,  b: 65 },
-					{ y: '2008', a: 50,  b: 40 },
-					{ y: '2009', a: 75,  b: 65 },
-					{ y: '2010', a: 50,  b: 40 },
-					{ y: '2011', a: 75,  b: 65 },
-					{ y: '2012', a: 100, b: 90 }
-				],
-				xkey: 'y',
-				ykeys: ['a', 'b'],
-				labels: ['Series A', 'Series B'],
-				lineColors: ['#303641', '#576277']
-			});
-		
-			area_chart_demo.parent().attr('style', '');
-		
-		
-		
-		
-			// Rickshaw
-			var seriesData = [ [], [] ];
-		
-			var random = new Rickshaw.Fixtures.RandomData(50);
-		
-			for (var i = 0; i < 50; i++)
-			{
-				random.addData(seriesData);
-			}
-		
-			var graph = new Rickshaw.Graph( {
-				element: document.getElementById("rickshaw-chart-demo"),
-				height: 193,
-				renderer: 'area',
-				stroke: false,
-				preserve: true,
-				series: [{
-						color: '#73c8ff',
-						data: seriesData[0],
-						name: 'Upload'
-					}, {
-						color: '#e0f2ff',
-						data: seriesData[1],
-						name: 'Download'
-					}
-				]
-			} );
-		
-			graph.render();
-		
-			var hoverDetail = new Rickshaw.Graph.HoverDetail( {
-				graph: graph,
-				xFormatter: function(x) {
-					return new Date(x * 1000).toString();
-				}
-			} );
-		
-			var legend = new Rickshaw.Graph.Legend( {
-				graph: graph,
-				element: document.getElementById('rickshaw-legend')
-			} );
-		
-			var highlighter = new Rickshaw.Graph.Behavior.Series.Highlight( {
-				graph: graph,
-				legend: legend
-			} );
-		
-			setInterval( function() {
-				random.removeData(seriesData);
-				random.addData(seriesData);
-				graph.update();
-		
-			}, 500 );
-		});
-		
-		
-		function getRandomInt(min, max)
-		{
-			return Math.floor(Math.random() * (max - min + 1)) + min;
-		}
-		</script>
+
+		<h4>Subscribers</h4>
 
 		<div class="row">
 			<div class="col-sm-3 col-xs-6">
-		
 				<div class="tile-stats tile-red">
-					<div class="icon"><i class="entypo-users"></i></div>
+					<div class="icon"><i class="entypo-suitcase"></i></div>
 					<div id = "companyCount" class="num" data-start="83" data-end="83" data-postfix="" data-duration="1500" data-delay="0">0</div>
 		
-					<h3>Registered Users</h3>
-					<p>Lifetime Total</p>
+					<h3>Subscribed Companies</h3>
+					<p>In Total</p>
 				</div>
-		
-			</div>
-		
-			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-green">
-					<div class="icon"><i class="entypo-chart-bar"></i></div>
-					<div id = "pageViews" class="num" data-start="135" data-end="135" data-postfix="" data-duration="1500" data-delay="600">
-						<div class="mask-loading">
-  							<div class="spinner">
-    						<div class="double-bounce1"></div>
-    						<div class="double-bounce2"></div>
-  							</div>
-						</div>
-					</div>
-		
-					<h3>Page Views</h3>
-					<p>In the Past 7 Days</p>
-				</div>
-		
 			</div>
 
-			<div class="clear visible-xs"></div>
-		
+
 			<div class="col-sm-3 col-xs-6">
-		
-				<div class="tile-stats tile-aqua">
-					<div class="icon"><i class="entypo-mail"></i></div>
-					<div id = "eventCount" class="num" data-start="23" data-end="23" data-postfix="" data-duration="1500" data-delay="1200">
-						 <div class="mask-loading">
- 							 <div class="spinner">
-    							<div class="double-bounce1"></div>
-    							<div class="double-bounce2"></div>
- 						 	</div>
-						</div>
-					</div>
+				<div class="tile-stats tile-green">
+					<div class="icon"><i class="entypo-login"></i></div>
+					<div id = "eventCount" class="num" data-start="23" data-end="23" data-postfix="" data-duration="1500" data-delay="1200">47</div>
 		
 					<h3>Number of Logins</h3>
 					<p>In the Past 7 Days</p>
 				</div>
+			</div>
+
+			<div class="col-sm-3 col-xs-6">
+				<div class="tile-stats tile-aqua">
+					<div class="icon"><i class="entypo-eye"></i></div>
+					<div id = "pageViews" class="num" data-start="135" data-end="135" data-postfix="" data-duration="1500" data-delay="600">62</div>
 		
+					<h3>Page Views</h3>
+					<p>In the Past 7 Days</p>
+
+				</div>
 			</div>
 		
 			<div class="col-sm-3 col-xs-6">
-		
 				<div class="tile-stats tile-blue">
-					<div class="icon"><i class="entypo-rss"></i></div>
-					<div id = "sessionCount" class="num" data-start="52" data-end="52" data-postfix="" data-duration="1500" data-delay="1800">
-						<div class="mask-loading">
-  							<div class="spinner">
-    							<div class="double-bounce1"></div>
-    							<div class="double-bounce2"></div>
-  							</div>
-						</div>
-					</div>
+					<div class="icon"><i class="entypo-clock"></i></div>
+					<div id = "appmtCount" class="num" data-start="0" data-end="0" data-postfix="" data-duration="1500" data-delay="0">23</div>
 		
-					<h3>Number of Sessions</h3>
+					<h3>Appointments Made</h3>
 					<p>In the Past 7 Days</p>
 				</div>
-		
 			</div>
 		</div>
 
-				<br />
-		
-		
-		<br />
-		
+		<br/>
+
 		<div class="row">
 			<div class="col-sm-3 col-xs-6">
-		
 				<div class="tile-stats tile-orange">
-					<div class="icon"><i class="entypo-chart-bar"></i></div>
+					<div class="icon"><i class="entypo-flash"></i></div>
 					<div id = "convRate" class="num" data-start="135" data-end="135" data-postfix="" data-duration="1500" data-delay="600">
 						<div class="mask-loading">
   							<div class="spinner">
@@ -397,55 +200,220 @@
 					</div>
 		
 					<h3>Conversion Rate</h3>
-					<p># of Signups/ # of Unique Landing Page Views</p>
+					<p># of Users Converted to Subscribers</p>
 				</div>
-		
 			</div>
-			<div class="col-sm-9">
+
+			<div class="col-sm-3 col-xs-6">
+				<div class="tile-stats tile-purple">
+					<div class="icon"><i class="entypo-users"></i></div>
+					<div id = "userCount" class="num" data-start="0" data-end="0" data-postfix="" data-duration="1500" data-delay="0">12</div>
 		
-				<div class="panel panel-primary">
-					<table class="table">
-						<thead>
-							<tr>
-								<th class="padding-bottom-none text-center">
-									<br />
-									<br />
-									<div class="mask-loading2">
-  							<div class="spinner2">
-    						<div class="double-bounce3"></div>
-    						<div class="double-bounce4"></div>
-  							</div>
-						</div>
-									<span class="monthly-sales"></span>
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="panel-heading text-center">
-									<h4>New Visitors On the Site Per Day (Past 60 Days)</h4>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					<h3>Registered Users</h3>
+					<p>In Total</p>
 				</div>
-		
 			</div>
-		
-			
-		
+
+			<div class="col-sm-6 col-xs-12">
+				<div class="tile-stats tile-gray">
+					<div class="icon"><i class="entypo-chart-line"></i></div>
+				    
+				    <script type="text/javascript">
+				      google.charts.load('current', {'packages':['corechart']});
+				      google.charts.setOnLoadCallback(drawChart);
+
+				      function drawChart() {
+				        var data = google.visualization.arrayToDataTable([
+				          ['Date', 'May','June'],
+				          ['1',  4, 9],
+				          ['5',  15, 12],
+				          ['10',  12, 13],
+				          ['15',  9, 17],
+				          ['20',  11, 22],
+				          ['25',  2, 25],
+				          ['30',  3, 40]
+				        ]);
+
+				        var options = {
+				          title: 'Daily New Visitors',
+				          curveType: 'function',
+				          legend: { position: 'bottom' }
+				        };
+
+				        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+				        chart.draw(data, options);
+				      }
+				    </script>
+				 
+				    <body>
+				    <div id="curve_chart" style="width: 550px; height: 120px"></div>
+				    </body>
+
+				</div>
+			</div>
 		</div>
 		
-		<br />
+		<br/>
+		<br/>
+	
+
+		<h4>Omnichannels</h4>
+
+		<div class="row">
+			<div class="col-sm-6 col-xs-12">
+				<div class="tile-stats tile-pink">
+					<div class="icon"><i class="entypo-doc-text"></i></div>
+					<div id = "slackCount" class="num" data-start="0" data-end="0" data-postfix="" data-duration="1500" data-delay="0">39%</div>
 		
+					<h3>Slack Usage</h3>
+					<p>Among All Users In the Past 7 Days</p>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-xs-12">
+				<div class="tile-stats tile-cyan">
+					<div class="icon"><i class="entypo-chat"></i></div>
+					<div id = "smsCount" class="num" data-start="0" data-end="0" data-postfix="" data-duration="1500" data-delay="0">52%</div>
 		
+					<h3>SMS Usage</h3>
+					<p>Among All Users In the Past 7 Days</p>
+				</div>
+			</div>
+		</div>		
+
+		<div class="row">
+			<div class="col-sm-6 col-xs-12">
+				<div class="tile-stats tile-aqua">
+					<div class="icon"><i class="entypo-skype"></i></div>
+					<div id = "skypeCount" class="num" data-start="0" data-end="0" data-postfix="" data-duration="1500" data-delay="0">54%</div>
 		
+					<h3>Skype Usage</h3>
+					<p>Among All Users In the Past 7 Days</p>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-xs-12">
+				<div class="tile-stats tile-blue">
+					<div class="icon"><i class="entypo-facebook-squared"></i></div>
+					<div id = "fbCount" class="num" data-start="0" data-end="0" data-postfix="" data-duration="1500" data-delay="0">34%</div>
 		
+					<h3>Facebook Usage</h3>
+					<p>Among All Users In the Past 7 Days</p>
+				</div>
+			</div>
+		</div>	
+		
+		<br/>
+		<br/>
+	
+		<h4>Earnings</h4>
+
+		<div class="row">
+			<div class="col-sm-6 col-xs-12">
+				<div class="tile-stats tile-white-plum">
+					<div class="icon"><i class="entypo-trophy"></i></div>
+					<div id = "totalEarning" class="num" data-start="0" data-end="0" data-postfix="" data-duration="1500" data-delay="0">$5327.40</div>
+		
+					<h3>Total Earnings</h3>
+					<p>This Past Year: 2017</p>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-xs-12">
+				<div class="tile-stats tile-white-blue">
+					<div class="icon"><i class="entypo-chart-area"></i></div>
+					<div id = "monthEarning" class="num" data-start="0" data-end="0" data-postfix="" data-duration="1500" data-delay="0">$761.20</div>
+		
+					<h3>Total Earnings</h3>
+					<p>This Past Month: June</p>
+				</div>
+			</div>
+		</div>				
+
+
+		<div class="row">
+			<div class="col-sm-6 col-xs-12">
+				<div class="tile-stats tile-white-plum">
+					<div class="icon"><i class="entypo-chart-pie"></i></div>
+
+				    <script type="text/javascript">
+				      google.charts.load("current", {packages:["corechart"]});
+				      google.charts.setOnLoadCallback(drawChart);
+				      function drawChart() {
+				        var data = google.visualization.arrayToDataTable([
+				          ['Type', 'Number Subscribed'],
+				          ['Healthcare',     11],
+				          ['Technology',      7],
+				          ['Human Resources',  4],
+				          ['Others', 2]
+				        ]);
+
+				        var options = {
+				          title: 'Services Subscribers In',
+				          pieHole: 0.4,
+				        };
+
+				        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+				        chart.draw(data, options);
+				      }
+				    </script>
+
+				    <body>
+				    <div id="donutchart" style="width: 550px; height: 300px;"></div>
+				    </body>
+					<h3>Source of Income</h3>
+					<p>Subscribers' Business Type</p>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-xs-12">
+				<div class="tile-stats tile-white-blue">
+					<div class="icon"><i class="entypo-chart-bar"></i></div>
+				    
+				    <script type="text/javascript">
+				      google.charts.load("current", {packages:["corechart"]});
+				      google.charts.setOnLoadCallback(drawChart);
+				      function drawChart() {
+				        var data = google.visualization.arrayToDataTable([
+				          ["Type", "Profits", { role: "style" } ],
+				          ["Healthcare", 328, "#3366cc"],
+				          ["Technology", 215, "#dc3912"],
+				          ["Human Resource", 184, "#ff9900"],
+				          ["Others", 34, "#109618"]
+				        ]);
+
+				        var view = new google.visualization.DataView(data);
+				        view.setColumns([0, 1,
+				                         { calc: "stringify",
+				                           sourceColumn: 1,
+				                           type: "string",
+				                           role: "annotation" },
+				                         2]);
+
+				        var options = {
+				          title: "Monthly Earnings Breakdwon",
+				          width: 550,
+				          height: 300,
+				          bar: {groupWidth: "95%"},
+				          legend: { position: "none" },
+				        };
+				        var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+				        chart.draw(view, options);
+				    }
+				    </script>
+				    <div id="barchart_values" style="width: 550px; height: 300px;"></div>
+					
+					<h3>Monthly Earnings Breakdwon</h3>
+					<p>Of Current Year: 2017</p>
+				</div>
+			</div>
+		</div>		
+
+
 		<!-- Footer -->
 		<footer class="main">
-			
-			&copy; 2015 <strong>Emissary</strong>
-		
+			&copy; 2017 <strong>Dock In</strong>
 		</footer>
 	</div>
 	
