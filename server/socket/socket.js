@@ -100,7 +100,9 @@ exports.createServer = function(io_in) {
                     exports.notifyError(company_id, {error: err_msg});
                 }
                 else {
-                    var message = data.first_name + " " + data.last_name + " Scheduled an appointment for " + data.checkin_time;
+                    var checkin_time = new Date(Date.parse(data.checkin_time))
+                    var date_readable = checkin_time.toLocaleDateString();
+                    var message = data.first_name + " " + data.last_name + " checked in at " + date_readable;
                     if(data.first_name !== undefined)
                     {
                         slack.send({
