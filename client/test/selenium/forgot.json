@@ -5,7 +5,7 @@
   "steps": [
     {
       "type": "get",
-      "url": "http://emissary-2.herokuapp.com/forgot-password.html"
+      "url": "http://dockin.herokuapp.com/forgot-password.html"
     },
     {
       "type": "verifyElementPresent",
