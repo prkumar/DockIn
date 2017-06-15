@@ -1,3 +1,16 @@
+$(function isEmployee(){
+     var isEmployee = localStorage.getItem('userState');
+     console.log("im herer"+isEmployee);
+     if (isEmployee == '4'){
+      // document.getElementById("hideButton").innerHTML = "";
+      var div = document.getElementById("addEmployee");
+      div.disabled = true;
+      //error.log.innerHTML = "Only employers are allowed to add employees!";
+      document.getElementById("warn").innerHTML="Only employers are allowed to add employees!";
+      document.getElementById("hide").style.visibility = 'hidden';
+    }
+   });
+
 $(document).ready(function(){
     var companyData = JSON.parse(localStorage.getItem("currentCompany"));
     var myCompanyId = companyData._id;
@@ -8,7 +21,7 @@ $(document).ready(function(){
     $('#user-name').text(curUser.first_name + ' ' +  curUser.last_name);
 
     var employees = getEmployees();
-    
+
     var source = $("#employee-list-template").html();
     var template = Handlebars.compile(source);
     var compiledHtml = template(employees);
@@ -16,9 +29,9 @@ $(document).ready(function(){
     $("#employee-list").html(compiledHtml);
     $('.save-btn').click(submitForm);
 
-    
+
    /***
-     * Makes a get request to display list of employees 
+     * Makes a get request to display list of employees
      * @param none
      * @returns displays the employee list
      */

@@ -5,7 +5,7 @@ $(function() {
        //alert(userData);
        event.preventDefault();
        ajaxPostUser('/api/employees/login', userData);
-       
+
    });
 });
 
@@ -33,7 +33,13 @@ function ajaxPostUser(url, data){
              location.href = '/admin-dashboard.html'
            }
            else{
-             localStorage.setItem('userState' , 1);
+             if(response.role == 'c_admin'){
+               localStorage.setItem('userState' , 3);
+             }
+             else if(response.role == 'c_employee'){
+               localStorage.setItem('userState' , 4);
+             }
+             //localStorage.setItem('userState' , 1);
              localStorage.setItem('currentUser', JSON.stringify(response));
              ajaxGetCompanyInfo('/api/companies/' + response.company_id);
              location.href = '/visitors.html';

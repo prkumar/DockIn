@@ -1,9 +1,16 @@
+$(function isEmployee(){
+     var isEmployee = localStorage.getItem('userState');
+     if (isEmployee == '4'){
+      var div = document.getElementById("hide_app");
+      div.style.visibility = 'hidden';
+    }
+   });
 $(document).ready(function(){
     var companyData = JSON.parse(localStorage.getItem("currentCompany"));
     var myCompanyId = companyData._id;
     var curUser = JSON.parse(localStorage.getItem('currentUser'));
 
-  
+
     $('#user-name').text(curUser.first_name + ' ' +  curUser.last_name);
 
     var appts = getAppts();
@@ -26,7 +33,7 @@ $(document).ready(function(){
 
     $("#appt-list").html(compiledHtml);
     $('.save-btn').click(submitForm);
-    
+
    /***
      * Makes a get request to display list of appts
      * @param none
@@ -102,7 +109,7 @@ $(document).ready(function(){
 
       newAppt.date = jsDate(userDate,userTime);
       return newAppt;
-    } 
+    }
 
     $(document).on('click','.delete-appt',function(){
       var apptId = $(this).closest('.appt-row').attr('value');
@@ -179,7 +186,7 @@ $(document).ready(function(){
         formattedHour = time.substr(0,2);
 
         if(formattedHour == '12')
-          formattedHour = 12;  
+          formattedHour = 12;
         else
           formattedHour = 12 + parseInt(time.substr(0,2));
 
