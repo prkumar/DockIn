@@ -1,3 +1,15 @@
+$(function isEmployee(){
+     var isEmployee = localStorage.getItem('userState');
+     console.log("im herer"+isEmployee);
+     if (isEmployee == '4'){
+       var div1 = document.getElementById("dis-add");
+       div1.disabled = true;
+       var div2 = document.getElementById("dis-submit");
+       div2.disabled = true;
+       document.getElementById("warn_form").innerHTML="Only employers are allowed to add/submit forms!";
+     }
+   });
+
 $(document).ready(function($){
     $('.my-form:last .add-box').click(function(){
         var label;
@@ -32,7 +44,7 @@ $(document).ready(function($){
                 object: form
             },
             success: function( result ) {
-                
+
             }
 });
 
@@ -50,4 +62,3 @@ $('.my-form').on('click', '.remove-box', function(){
     });
     return false;
 });
-
