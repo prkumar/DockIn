@@ -1,10 +1,10 @@
 {
-  "name": "Emissary",
+  "name": "AnchorBuddies",
   "version": "1.0.0",
   "description": "Checking In Made Simple",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thiefjack/WebStormTroopers"
+    "url": "https://github.com/prkumar/Emissary"
   },
   "author": "Eduardo Aguilar",
   "scripts": {
@@ -82,4 +82,3 @@
     "node": "0.10.x"
   }
 }
-
