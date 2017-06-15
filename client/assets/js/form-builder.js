@@ -15,6 +15,28 @@ $(document).ready(function($){
         $('#optional_label').val("");
         return false;
     });
+    $('.my-form .save-form').click(function(){
+        var color;
+        color = $('#jscolor').val();
+        var num = $('#box-number').length;
+        var fields = [];
+        for (i=0; i<num; ++i) fields.push(label[i]);
+        var form = {color: color , fields: fields};
+
+        $.ajax({
+            url: "/api/form/create",
+            template: {
+                object: form
+            },
+            admin_id: {
+                object: form
+            },
+            success: function( result ) {
+                
+            }
+});
+
+    });
 });
 
 $('.my-form').on('click', '.remove-box', function(){
@@ -28,3 +50,4 @@ $('.my-form').on('click', '.remove-box', function(){
     });
     return false;
 });
+
