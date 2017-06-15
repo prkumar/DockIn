@@ -20,8 +20,8 @@ $(document).ready(function(){
         return new Date(a.date) - new Date(b.date);
       });
       for(var i = 0, len = appts.length; i < len; i++){
-        appts[i].fullDate = formatDate(appts[i].date.toString());
-        appts[i].appointmentTime = formatTime(appts[i].date.toString());
+        appts[i].fullDate = formatDate(appts[i].date.toLocaleString());
+        appts[i].appointmentTime = formatTime(appts[i].date.toLocaleString());
       }
       return appts;
     }
