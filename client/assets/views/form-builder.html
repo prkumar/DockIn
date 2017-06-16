@@ -9,9 +9,9 @@
 	<meta name="description" content="Neon Admin Panel" />
 	<meta name="author" content="" />
 
-	<link rel="icon" href="assets/images/logo-emissary.png">
+	<link rel="icon" href="assets/images/DOCK_NoName.png">
 
-	<title>Emissary | Forms</title>
+	<title>Dock In | Forms</title>
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="assets/native/css/shared-dashboard.css">
 	<link rel="stylesheet" href="assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="assets/css/neon-forms.css">
 	<link rel="stylesheet" href="assets/css/form-builder.css">
 	<link rel="stylesheet" href="assets/css/custom.css">
-	
+
 	<link rel="stylesheet" href="assets/native/css/appointment.css">
 
 	<script src="assets/js/jquery-1.11.3.min.js"></script>
@@ -39,7 +39,6 @@
 
 </head>
 <body class="page-body gray" data-url="http://neon.dev">
-
 <div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
 
 	<div class="sidebar-menu">
@@ -49,8 +48,8 @@
 				<!-- logo -->
 				<div class="logo">
 					<a href="visitors.html">
-						<img src="images/emissary.png" width="150" alt="" />
-					</a>
+						<img src="./../images/DockIn.png" width="75" alt="" />
+						</a>
 				</div>
 
 				<!-- logo collapse icon -->
@@ -92,15 +91,15 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
-						<i class="entypo-clipboard"></i>
-						<span class="title">Forms</span>
-					</a>
-				</li>
-				<li>
 					<a href="/settings.html">
 						<i class="entypo-tools"></i>
 						<span class="title">Settings</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="entypo-clipboard"></i>
+						<span class="title">Forms</span>
 					</a>
 				</li>
 			</ul>
@@ -157,9 +156,9 @@
 
 		<center>
 		  <h1>Build your form</h1>
-          <h2>Color picker:</h2> 
+          <h2>Color picker:</h2>
            <div>Color: <input class="jscolor" value="1C7F79"> </div>
-         
+
         </center>
 		<!--<center><h3>Preview</h3></center>-->
 <form class = "form-builder" role = "form">
@@ -184,11 +183,12 @@
 
    <h3 class = "add-form-text">Add up to two fields</h3>
    <input type = "text" class = "form-control" id = "optional_label" placeholder = "Enter label for field" maxlength="30">
-   
+
    <div class="add-fields my-form">
-       
-        <button type="button" class="btn btn-success add-box">Add</button>         
-		<button type = "submit" class = "save-form btn btn-primary">Submit</button>
+
+    <button type="button" id = "dis-add" class="btn btn-success add-box">Add</button>
+		<button type = "submit" id = "dis-submit" class = "save-form btn btn-primary">Submit</button>
+		<span id = "warn_form" style="color:red"></span>
 	</div>
 
 </form>
@@ -206,7 +206,7 @@
 		<script src="assets/js/resizeable.js"></script>
 		<script src="assets/js/neon-api.js"></script>
 		<script src="assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-		
+
 
 		<!-- Imported scripts on this page -->
 		<script src="assets/js/jvectormap/jquery-jvectormap-europe-merc-en.js"></script>

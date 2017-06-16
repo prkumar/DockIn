@@ -1,3 +1,10 @@
+$(function isEmployee(){
+     var isEmployee = localStorage.getItem('userState');
+     if (isEmployee == '4'){
+      var div = document.getElementById("hide_sett");
+      div.style.visibility = 'hidden';
+    }
+   });
 $(document).ready(function(){
    var companyData = JSON.parse(localStorage.getItem("currentCompany"));
    var myCompanyId = companyData._id;
