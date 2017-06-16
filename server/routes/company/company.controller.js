@@ -34,7 +34,7 @@ module.exports.template = {};
  * @apiParam {String} phone_number The contact phone number of the company
  * @apiParam {Date} paid_time The time of payment given for service
  * 
- * @apiError ServerNotResponding {String} Could Not Save
+ * @apiError ServerNotResponding {String} Could Not Save Company
  */
 module.exports.template.create = function(req, res) {
     var company = new Company();
@@ -53,7 +53,7 @@ module.exports.template.create = function(req, res) {
 
     company.save(function(err, c) {
         if(err) {
-            return res.status(400).json({error: "Could Not Save Company <--"});
+            return res.status(400).json("Email taken, please use unique email");
         }
         return res.status(200).json(showCompanyPublicInfo(c));
     });
